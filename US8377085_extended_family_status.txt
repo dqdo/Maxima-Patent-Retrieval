@@ -1,0 +1,864 @@
+[0] Patent: US8377085
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[1] Patent: JP2013502998
+Status: Withdrawn
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[2] Patent: US8372101
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[3] Patent: CA2750482
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[4] Patent: US20130046322
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[5] Patent: US8419757
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-23
+
+[6] Patent: JP5859905
+Status: Active
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[7] Patent: US9017355
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-01-14
+
+[8] Patent: JP6438998
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[9] Patent: US20130046291
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[10] Patent: JP5818354
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[11] Patent: US20150157354
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[12] Patent: US8338726
+Status: Expired - Fee Related
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-17
+
+[13] Patent: AU2010286689
+Status: Ceased
+Anticipated Expiration Date: 2030-08-26
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[14] Patent: US20140236202
+Status: Abandoned
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[15] Patent: EP2422721
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[16] Patent: US20100004668
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[17] Patent: EP2433578
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[18] Patent: US11478820
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2028-12-09
+
+[19] Patent: US9782180
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[20] Patent: CA3022254
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[21] Patent: US20110172689
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[22] Patent: US8425545
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[23] Patent: JP5813954
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[24] Patent: USD0700966
+Warning: Could not verify event section loaded.
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[25] Patent: US20150265307
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[26] Patent: CA2774751
+Status: Active
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[27] Patent: AU2017203336
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[28] Patent: US8444662
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-28
+
+[29] Patent: US8403950
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-09-12
+
+[30] Patent: JP2011505226
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[31] Patent: JP2016073730
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[32] Patent: US20100000074
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-05-10
+
+[33] Patent: US20180036031
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-07-08
+
+[34] Patent: US8061014
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-05-10
+
+[35] Patent: US20090143798
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-10
+
+[36] Patent: AU2014203804
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[37] Patent: JP2012096046
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[38] Patent: CA2774751
+Status: Active
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[39] Patent: US20170367726
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[40] Patent: EP3263055
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[41] Patent: JP6173496
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[42] Patent: USD0691265
+Warning: Could not verify event section loaded.
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[43] Patent: US20130046290
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[44] Patent: US9872696
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[45] Patent: EP2422721
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[46] Patent: US20090143797
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-23
+
+[47] Patent: JP2015231551
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[48] Patent: EP3087936
+Status: Ceased
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[49] Patent: US20120221031
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[50] Patent: US9107690
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-05-05
+
+[51] Patent: US20130341165
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[52] Patent: US20210107031
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2028-12-09
+
+[53] Patent: US20110251632
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-06-08
+
+[54] Patent: AU2008334050
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[55] Patent: US20090143799
+Status: Abandoned
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[56] Patent: US9084625
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-04-12
+
+[57] Patent: US8663262
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-03-30
+
+[58] Patent: WO2011025857
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[59] Patent: US20090143802
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-30
+
+[60] Patent: CA2945596
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[61] Patent: US9314261
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[62] Patent: US8403949
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-09-04
+
+[63] Patent: EP3087936
+Status: Ceased
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[64] Patent: US20110167619
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[65] Patent: CA2968143
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[66] Patent: JP2014221186
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[67] Patent: US8497436
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[68] Patent: CA2921116
+Status: Abandoned
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[69] Patent: US20160228914
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2032-01-13
+
+[70] Patent: AU2017203336
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[71] Patent: US20100004669
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[72] Patent: CA2790917
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2030-08-26
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[73] Patent: JP2018161524
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[74] Patent: US8333778
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[75] Patent: JP5896427
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[76] Patent: CA2790917
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2030-08-26
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[77] Patent: AU2008334050
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[78] Patent: US20130239402
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-06-08
+
+[79] Patent: US20120078278
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-05-05
+
+[80] Patent: US20110257650
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-03-30
+
+[81] Patent: US20110009890
+Status: Expired - Fee Related
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-14
+
+[82] Patent: US8197502
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[83] Patent: EP2433577
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[84] Patent: US8487199
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[85] Patent: US20110054506
+Status: Expired - Fee Related
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-17
+
+[86] Patent: US8439939
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-06-08
+
+[87] Patent: US20090143805
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-09-12
+
+[88] Patent: JP2014204983
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[89] Patent: US20090143803
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-28
+
+[90] Patent: EP2471080
+Status: Withdrawn
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[91] Patent: AU2011213852
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[92] Patent: US20110184445
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[93] Patent: US20120277780
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[94] Patent: US20090143800
+Status: Abandoned
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[95] Patent: EP2510891
+Status: Active
+Anticipated Expiration Date: 2032-04-15
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[96] Patent: JP2014204982
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[97] Patent: USD0700699
+Warning: Could not verify event section loaded.
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[98] Patent: EP2229104
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[99] Patent: US20110190800
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2028-11-23
+
+[100] Patent: CA3022252
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[101] Patent: US8333779
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2028-11-23
+
+[102] Patent: US20170325836
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[103] Patent: EP2471080
+Status: Withdrawn
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[104] Patent: US20120071796
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-01-14
+
+[105] Patent: US8435257
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[106] Patent: US20110167621
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[107] Patent: EP2313814
+Status: Active
+Anticipated Expiration Date: 2029-07-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[108] Patent: US20150141988
+Status: Abandoned
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[109] Patent: JP2012223582
+Status: Active
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[110] Patent: US10426508
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-07-26
+
+[111] Patent: WO2010007138
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[112] Patent: US8502091
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[113] Patent: US20130046321
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[114] Patent: JP6126173
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[115] Patent: EP3263055
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[116] Patent: AU2010286689
+Status: Ceased
+Anticipated Expiration Date: 2030-08-26
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[117] Patent: JP5900917
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[118] Patent: JP2013126430
+Status: Pending
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[119] Patent: JP2016041314
+Status: Pending
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[120] Patent: EP2229104
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[121] Patent: JP5896428
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[122] Patent: JP2017148538
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[123] Patent: AU2014203804
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[124] Patent: CA3022252
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[125] Patent: EP2422721
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[126] Patent: US9861382
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[127] Patent: US20130245657
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-04-12
+
+[128] Patent: CA2968143
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[129] Patent: JP6081561
+Status: Active
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[130] Patent: EP2510891
+Status: Active
+Anticipated Expiration Date: 2032-04-15
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[131] Patent: CA2945596
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[132] Patent: WO2011025857
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[133] Patent: EP2433578
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[134] Patent: US20110167620
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[135] Patent: JP2017099917
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[136] Patent: CA2707837
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[137] Patent: JP5896426
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[138] Patent: US20090143801
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-11-06
+
+[139] Patent: US8403948
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-11-06
+
+[140] Patent: US20170119427
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-07-26
+
+[141] Patent: US8418349
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[142] Patent: US8372099
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-30
+
+[143] Patent: CA2750482
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[144] Patent: AU2011213852
+Status: Ceased
+Anticipated Expiration Date: 2031-08-24
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[145] Patent: CA3022254
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-13
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[146] Patent: JP2016104161
+Status: Active
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[147] Patent: US10799913
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2032-01-13
+
+[148] Patent: EP3398540
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[149] Patent: CA2707837
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[150] Patent: EP2433578
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[151] Patent: US10456158
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-07-08
+
+[152] Patent: WO2009073608
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[153] Patent: EP2433577
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[154] Patent: USD0700967
+Warning: Could not verify event section loaded.
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[155] Patent: WO2010007138
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[156] Patent: US20090143804
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-09-04
+
+[157] Patent: US8334468
+Status: Expired - Fee Related
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-12-14
+
+[158] Patent: JP2012096045
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[159] Patent: JP6364098
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[160] Patent: JP6655666
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2032-04-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[161] Patent: EP2313814
+Status: Active
+Anticipated Expiration Date: 2029-07-16
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[162] Patent: US8742269
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[163] Patent: US8377085
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[164] Patent: EP2433577
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[165] Patent: US8419758
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2030-06-10
+
+[166] Patent: US20110178542
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[167] Patent: EP2229104
+Status: Active
+Anticipated Expiration Date: 2028-12-01
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[168] Patent: US8992555
+Status: Active
+Anticipated Expiration Date: Anticipated expiration date not found
+Adjusted Expiration Date: 2029-06-08
+
+[169] Patent: US8497437
+Status: Expired - Fee Related
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[170] Patent: US8236020
+Status: Active
+Anticipated Expiration Date: 2028-11-06
+Adjusted Expiration Date: Adjusted expiration date not found
+
+[171] Patent: EP3398540
+Status: Active
+Anticipated Expiration Date: 2031-08-25
+Adjusted Expiration Date: Adjusted expiration date not found
+
