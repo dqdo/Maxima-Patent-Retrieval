@@ -124,7 +124,7 @@ def get_patent_details(index, patent_num, driver, log_func):
 
 # Main execution
 main_patent_number = 'US8377085'
-output_filename = f'{main_patent_number}_extended_family_status.txt'
+output_filename = f'data/{main_patent_number}_extended_family_status.txt'
 
 default_browser = get_default_browser()
 
@@ -140,7 +140,7 @@ if default_browser:
     get_patent_details(0, main_patent_number, driver, logf)
 
     # Process related patents
-    family_file = f'{main_patent_number}_extended_family.txt'
+    family_file = f'data/{main_patent_number}_extended_family.txt'
     if os.path.exists(family_file):
         with open(family_file, 'r') as f:
             for index, line in enumerate(f, start=1):

@@ -2,11 +2,15 @@ import requests
 from dotenv import load_dotenv
 import os
 
+# Load environment variables from the .env file
 load_dotenv()
 
+# Retrieve the API key from the environment
 api_key = os.getenv("API_KEY")
 
-def get_patent_family_details(patent_number):
+
+# Function to get patent family details and save to a specified directory
+def get_patent_family_details(patent_number, directory):
     # Construct the API URL with the provided patent number and token
     url = f"https://api.lens.org/patent/search?token={api_key}&query={patent_number}"
 
@@ -15,12 +19,18 @@ def get_patent_family_details(patent_number):
     # Parse the JSON response
     data = response.json()
 
+    # Access the families data
     families = data['data'][0].get('families', None)
     extended_family = families.get('extended_family', None)
     extended_family_members = extended_family.get('members', None)
 
     if extended_family_members:
-        filename = f"{patent_number}_extended_family.txt"
+        # Ensure the directory exists
+        os.makedirs(directory, exist_ok=True)
+
+        # Define the path where the file will be saved
+        filename = os.path.join(directory, f"{patent_number}_extended_family.txt")
+
         with open(filename, "w") as file:
             for member in extended_family_members:
                 document_id = member.get('document_id', {})
@@ -32,10 +42,11 @@ def get_patent_family_details(patent_number):
     else:
         print("No extended family members found.")
 
-# Function to get patent details by number
+
+# Function to get patent details and print the status
 def get_patent_details(patent_number):
     # Construct the API URL with the provided patent number and token
-    url = f"https://api.lens.org/patent/search?token={"aKSZdWlGl7IJCqkh7SNvnnfpn1eJ17OmglUZCOoBD1bONIp7yZx3"}&query={patent_number}"
+    url = f"https://api.lens.org/patent/search?token={api_key}&query={patent_number}"
 
     # Send the GET request
     response = requests.get(url)
@@ -73,6 +84,11 @@ def get_patent_details(patent_number):
     else:
         print(f"Error {response.status_code}: {response.text}")
 
+
+# Specify the directory where the text file will be saved
+directory = "data"  # Directory where you want to save the file
+
+# Example usage
 patent = "US8377085"
 get_patent_details(patent)
-get_patent_family_details(patent)
+get_patent_family_details(patent, directory)

@@ -1,6 +1,7 @@
 [0] Patent: US8377085
-Status: Active
-Anticipated Expiration Date: 2028-11-06
+Warning: Could not verify event section loaded.
+Status: Status not found
+Anticipated Expiration Date: Anticipated expiration date not found
 Adjusted Expiration Date: Adjusted expiration date not found
 
 [1] Patent: JP2013502998
