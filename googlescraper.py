@@ -1,6 +1,7 @@
 import os
 import platform
 import subprocess
+import json
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -77,14 +78,9 @@ def create_webdriver(browser):
     else:
         raise ValueError("Unsupported browser type")
 
-# Logging
-def log(text, file):
-    print(text)
-    file.write(text + '\n')
-
 # Extract patent info
-def get_patent_details(index, patent_num, driver, log_func):
-    log_func(f"[{index}] Patent: {patent_num}")
+def get_patent_details(index, patent_num, driver):
+    print(f"[{index}] Patent: {patent_num}")
     url = f'https://patents.google.com/patent/{patent_num}/en'
     driver.get(url)
 
@@ -93,7 +89,7 @@ def get_patent_details(index, patent_num, driver, log_func):
             EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'event')]"))
         )
     except Exception:
-        log_func("Warning: Could not verify event section loaded.")
+        print("Warning: Could not verify event section loaded.")
 
     def extract(xpath, label):
         try:
@@ -102,42 +98,37 @@ def get_patent_details(index, patent_num, driver, log_func):
         except Exception:
             return f"{label} not found"
 
-    active_status = extract(
-        "//div[contains(@class, 'event') and .//div[text()='Status']]//span[contains(@class, 'title-text')]",
-        "Status"
-    )
-
-    anticipated_exp = extract(
-        "//div[contains(@class, 'event') and .//span[contains(text(),'Anticipated expiration')]]/div[contains(@class, 'legal-status')]",
-        "Anticipated expiration date"
-    )
-
-    adjusted_exp = extract(
-        "//div[contains(@class, 'event') and .//span[contains(text(),'Adjusted expiration')]]/div[contains(@class, 'legal-status')]",
-        "Adjusted expiration date"
-    )
-
-    log_func(f"Status: {active_status}")
-    log_func(f"Anticipated Expiration Date: {anticipated_exp}")
-    log_func(f"Adjusted Expiration Date: {adjusted_exp}")
-    log_func("")
+    return {
+        "index": index,
+        "patent_number": patent_num,
+        "status": extract(
+            "//div[contains(@class, 'event') and .//div[text()='Status']]//span[contains(@class, 'title-text')]",
+            "Status"
+        ),
+        "anticipated_expiration_date": extract(
+            "//div[contains(@class, 'event') and .//span[contains(text(),'Anticipated expiration')]]/div[contains(@class, 'legal-status')]",
+            "Anticipated expiration date"
+        ),
+        "adjusted_expiration_date": extract(
+            "//div[contains(@class, 'event') and .//span[contains(text(),'Adjusted expiration')]]/div[contains(@class, 'legal-status')]",
+            "Adjusted expiration date"
+        )
+    }
 
 # Main execution
 main_patent_number = 'US8377085'
-output_filename = f'data/{main_patent_number}_extended_family_status.txt'
+output_filename = f'data/{main_patent_number}_extended_family_status.json'
 
 default_browser = get_default_browser()
 
 if default_browser:
     print(f"Default browser detected: {default_browser}")
     driver = create_webdriver(default_browser)
-    output_file = open(output_filename, 'w', encoding='utf-8')
 
-    # Lambda wrapper for logging
-    logf = lambda text: log(text, output_file)
+    patent_results = []
 
     # Process main patent
-    get_patent_details(0, main_patent_number, driver, logf)
+    patent_results.append(get_patent_details(0, main_patent_number, driver))
 
     # Process related patents
     family_file = f'data/{main_patent_number}_extended_family.txt'
@@ -146,11 +137,16 @@ if default_browser:
             for index, line in enumerate(f, start=1):
                 patent = line.strip()
                 if patent:
-                    get_patent_details(index, patent, driver, logf)
+                    patent_results.append(get_patent_details(index, patent, driver))
     else:
-        logf(f"Family file '{family_file}' not found.")
+        print(f"Family file '{family_file}' not found.")
+
+    # Save to JSON
+    os.makedirs("data", exist_ok=True)
+    with open(output_filename, 'w', encoding='utf-8') as outfile:
+        json.dump(patent_results, outfile, indent=2, ensure_ascii=False)
 
     driver.quit()
-    output_file.close()
+    print(f"Results saved to {output_filename}")
 else:
     print("Unable to detect the default browser. Exiting.")
