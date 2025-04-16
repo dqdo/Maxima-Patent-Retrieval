@@ -79,7 +79,7 @@ def create_webdriver(browser):
         raise ValueError("Unsupported browser type")
 
 # Extract patent info
-def get_patent_details(index, patent_num, driver):
+def get_patent_details(index, patent_num, driver, related_patents=None):
     print(f"[{index}] Patent: {patent_num}")
     url = f'https://patents.google.com/patent/{patent_num}/en'
     driver.get(url)
@@ -112,7 +112,8 @@ def get_patent_details(index, patent_num, driver):
         "adjusted_expiration_date": extract(
             "//div[contains(@class, 'event') and .//span[contains(text(),'Adjusted expiration')]]/div[contains(@class, 'legal-status')]",
             "Adjusted expiration date"
-        )
+        ),
+        "related_patents": related_patents or []
     }
 
 # Directories
@@ -120,42 +121,37 @@ family_data_dir = 'patent_family_data'
 status_data_dir = 'patent_status_data'
 os.makedirs(status_data_dir, exist_ok=True)
 
+# Load patent family set
+family_set_path = os.path.join(family_data_dir, 'patent_family_set.json')
+
+if not os.path.exists(family_set_path):
+    print("Error: patent_family_set.json not found.")
+    exit()
+
+with open(family_set_path, 'r', encoding='utf-8') as f:
+    family_set = json.load(f)
+
 default_browser = get_default_browser()
 
 if default_browser:
     print(f"Default browser detected: {default_browser}")
     driver = create_webdriver(default_browser)
 
-    # Loop through each patent family file
-    for file in os.listdir(family_data_dir):
-        if not file.endswith('.json'):
-            continue
+    all_patent_data = []
 
-        main_patent_number = file.replace('_extended_family.json', '')
-        family_path = os.path.join(family_data_dir, file)
-        output_filename = os.path.join(status_data_dir, f"{main_patent_number}_extended_family_status.json")
-
+    for idx, (main_patent, related_patents) in enumerate(family_set.items()):
         try:
-            with open(family_path, 'r', encoding='utf-8') as f:
-                family_patents = json.load(f)
+            data = get_patent_details(idx, main_patent, driver, related_patents)
+            all_patent_data.append(data)
         except Exception as e:
-            print(f"Error reading {file}: {e}")
-            continue
+            print(f"Error processing {main_patent}: {e}")
 
-        # Include the main patent too
-        all_patents = [main_patent_number] + family_patents
-        patent_results = []
+    # Save all results into one file
+    final_output_path = os.path.join(status_data_dir, 'patent_family_set_status.json')
+    with open(final_output_path, 'w', encoding='utf-8') as f:
+        json.dump(all_patent_data, f, indent=2, ensure_ascii=False)
 
-        for index, patent in enumerate(all_patents):
-            if patent:
-                patent_results.append(get_patent_details(index, patent, driver))
-
-        with open(output_filename, 'w', encoding='utf-8') as outfile:
-            json.dump(patent_results, outfile, indent=2, ensure_ascii=False)
-
-        print(f"Saved status data for {main_patent_number} with {len(patent_results)} record(s).")
-
+    print(f"\nSaved all results to: {final_output_path}")
     driver.quit()
-    print("Finished processing all patent families.")
 else:
     print("Unable to detect the default browser. Exiting.")
