@@ -4,14 +4,6 @@ import subprocess
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.firefox.service import Service as FirefoxService
-from selenium.webdriver.edge.service import Service as EdgeService
-
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -61,30 +53,26 @@ def create_webdriver(browser):
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--window-size=1920,1080")
         options.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
-        return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+        return webdriver.Chrome(options=options)
+    
 
     elif browser == 'firefox':
         options = webdriver.FirefoxOptions()
         options.add_argument("--headless")
-        return webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
+        return webdriver.Firefox( options=options)
 
     elif browser == 'edge':
         options = webdriver.EdgeOptions()
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")
-        return webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
+        return webdriver.Edge( options=options)
 
     else:
         raise ValueError("Unsupported browser type")
 
-# Logging
-def log(text, file):
-    print(text)
-    file.write(text + '\n')
 
 # Extract patent info
-def get_patent_details(index, patent_num, driver, log_func):
-    log_func(f"[{index}] Patent: {patent_num}")
+def get_patent_details(patent_num: str, driver):
     url = f'https://patents.google.com/patent/{patent_num}/en'
     driver.get(url)
 
@@ -93,7 +81,7 @@ def get_patent_details(index, patent_num, driver, log_func):
             EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'event')]"))
         )
     except Exception:
-        log_func("Warning: Could not verify event section loaded.")
+        print("Warning: Could not verify event section loaded.")
 
     #returns an element given an xpath. If element cannot be found, will return an exception with the label.
     def extract(xpath, label):
@@ -114,41 +102,6 @@ def get_patent_details(index, patent_num, driver, log_func):
         "//patent-text[@name='claims']//section[@id='text']/div[@class='claims style-scope patent-text']/div",
         "Claim text"
     )
+
     loc = get_claims_from_ref(claim_text_ref)
-
-    log_func(f"Claim text: {loc}")
-    log_func("")
-
-
-# Main execution
-main_patent_number = 'US8377085'
-output_filename = f'data/{main_patent_number}_extended_family_status.txt'
-
-default_browser = get_default_browser()
-
-if default_browser:
-    print(f"Default browser detected: {default_browser}")
-    driver = create_webdriver(default_browser)
-    output_file = open(output_filename, 'w', encoding='utf-8')
-
-    # Lambda wrapper for logging
-    logf = lambda text: log(text, output_file)
-
-    # Process main patent
-    get_patent_details(0, main_patent_number, driver, logf)
-
-    # Process related patents
-    family_file = f'data/{main_patent_number}_extended_family.txt'
-    if os.path.exists(family_file):
-        with open(family_file, 'r') as f:
-            for index, line in enumerate(f, start=1):
-                patent = line.strip()
-                if patent:
-                    get_patent_details(index, patent, driver, logf)
-    else:
-        logf(f"Family file '{family_file}' not found.")
-
-    driver.quit()
-    output_file.close()
-else:
-    print("Unable to detect the default browser. Exiting.")
+    return loc
