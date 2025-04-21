@@ -1,0 +1,2556 @@
+[
+  {
+    "index": 0,
+    "patent_number": "JP2013502998",
+    "status": "Withdrawn",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 1,
+    "patent_number": "US8372101",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 2,
+    "patent_number": "CA2750482",
+    "status": "Active",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 3,
+    "patent_number": "US20130046322",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 4,
+    "patent_number": "US8419757",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-23",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 5,
+    "patent_number": "JP5859905",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 6,
+    "patent_number": "US9017355",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-01-14",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 7,
+    "patent_number": "JP6438998",
+    "status": "Active",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 8,
+    "patent_number": "US20130046291",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 9,
+    "patent_number": "JP5818354",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 10,
+    "patent_number": "US20150157354",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 11,
+    "patent_number": "US8338726",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-17",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 12,
+    "patent_number": "AU2010286689",
+    "status": "Ceased",
+    "anticipated_expiration_date": "2030-08-26",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 13,
+    "patent_number": "US20140236202",
+    "status": "Abandoned",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 14,
+    "patent_number": "EP2422721",
+    "status": "Active",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 15,
+    "patent_number": "US20100004668",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 16,
+    "patent_number": "EP2433578",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 17,
+    "patent_number": "US11478820",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2028-12-09",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 18,
+    "patent_number": "US9782180",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 19,
+    "patent_number": "CA3022254",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-13",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 20,
+    "patent_number": "US20110172689",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 21,
+    "patent_number": "US8425545",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 22,
+    "patent_number": "JP5813954",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 23,
+    "patent_number": "USD0700966",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 24,
+    "patent_number": "US20150265307",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 25,
+    "patent_number": "CA2774751",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-13",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 26,
+    "patent_number": "AU2017203336",
+    "status": "Ceased",
+    "anticipated_expiration_date": "2031-08-24",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 27,
+    "patent_number": "US8444662",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-28",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 28,
+    "patent_number": "US8403950",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-09-12",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 29,
+    "patent_number": "JP2011505226",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 30,
+    "patent_number": "JP2016073730",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 31,
+    "patent_number": "US20100000074",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-05-10",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 32,
+    "patent_number": "US20180036031",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-07-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 33,
+    "patent_number": "US8061014",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-05-10",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 34,
+    "patent_number": "US20090143798",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-10",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 35,
+    "patent_number": "AU2014203804",
+    "status": "Ceased",
+    "anticipated_expiration_date": "2031-08-24",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 36,
+    "patent_number": "JP2012096046",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 37,
+    "patent_number": "US20170367726",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 38,
+    "patent_number": "EP3263055",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 39,
+    "patent_number": "JP6173496",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 40,
+    "patent_number": "USD0691265",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 41,
+    "patent_number": "US20130046290",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 42,
+    "patent_number": "US9872696",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 43,
+    "patent_number": "US20090143797",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-23",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 44,
+    "patent_number": "JP2015231551",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 45,
+    "patent_number": "EP3087936",
+    "status": "Ceased",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 46,
+    "patent_number": "US20120221031",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 47,
+    "patent_number": "US9107690",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-05-05",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 48,
+    "patent_number": "US20130341165",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 49,
+    "patent_number": "US20210107031",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2028-12-09",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 50,
+    "patent_number": "US20110251632",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-06-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 51,
+    "patent_number": "AU2008334050",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 52,
+    "patent_number": "US20090143799",
+    "status": "Abandoned",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 53,
+    "patent_number": "US9084625",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-04-12",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 54,
+    "patent_number": "US8663262",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-03-30",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 55,
+    "patent_number": "WO2011025857",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 56,
+    "patent_number": "US20090143802",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-30",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 57,
+    "patent_number": "CA2945596",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 58,
+    "patent_number": "US9314261",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 59,
+    "patent_number": "US8403949",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-09-04",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 60,
+    "patent_number": "US20110167619",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 61,
+    "patent_number": "CA2968143",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 62,
+    "patent_number": "JP2014221186",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 63,
+    "patent_number": "US8497436",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 64,
+    "patent_number": "CA2921116",
+    "status": "Abandoned",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 65,
+    "patent_number": "US20160228914",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2032-01-13",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 66,
+    "patent_number": "US20100004669",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 67,
+    "patent_number": "CA2790917",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2030-08-26",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 68,
+    "patent_number": "JP2018161524",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 69,
+    "patent_number": "US8333778",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 70,
+    "patent_number": "JP5896427",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 71,
+    "patent_number": "US20130239402",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-06-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 72,
+    "patent_number": "US20120078278",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-05-05",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 73,
+    "patent_number": "US20110257650",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-03-30",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 74,
+    "patent_number": "US20110009890",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-14",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 75,
+    "patent_number": "US8197502",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 76,
+    "patent_number": "EP2433577",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 77,
+    "patent_number": "US8487199",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 78,
+    "patent_number": "US20110054506",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-17",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 79,
+    "patent_number": "US8439939",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-06-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 80,
+    "patent_number": "US20090143805",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-09-12",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 81,
+    "patent_number": "JP2014204983",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 82,
+    "patent_number": "US20090143803",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-28",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 83,
+    "patent_number": "EP2471080",
+    "status": "Withdrawn",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 84,
+    "patent_number": "AU2011213852",
+    "status": "Ceased",
+    "anticipated_expiration_date": "2031-08-24",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 85,
+    "patent_number": "US20110184445",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 86,
+    "patent_number": "US20120277780",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 87,
+    "patent_number": "US20090143800",
+    "status": "Abandoned",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 88,
+    "patent_number": "EP2510891",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-15",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 89,
+    "patent_number": "JP2014204982",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 90,
+    "patent_number": "USD0700699",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 91,
+    "patent_number": "EP2229104",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 92,
+    "patent_number": "US20110190800",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2028-11-23",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 93,
+    "patent_number": "CA3022252",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-13",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 94,
+    "patent_number": "US8333779",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2028-11-23",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 95,
+    "patent_number": "US20170325836",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 96,
+    "patent_number": "US20120071796",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-01-14",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 97,
+    "patent_number": "US8435257",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 98,
+    "patent_number": "US20110167621",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 99,
+    "patent_number": "EP2313814",
+    "status": "Active",
+    "anticipated_expiration_date": "2029-07-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 100,
+    "patent_number": "US20150141988",
+    "status": "Abandoned",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 101,
+    "patent_number": "JP2012223582",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 102,
+    "patent_number": "US10426508",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-07-26",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 103,
+    "patent_number": "WO2010007138",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 104,
+    "patent_number": "US8502091",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 105,
+    "patent_number": "US20130046321",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 106,
+    "patent_number": "JP6126173",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 107,
+    "patent_number": "JP5900917",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 108,
+    "patent_number": "JP2013126430",
+    "status": "Pending",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 109,
+    "patent_number": "JP2016041314",
+    "status": "Pending",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 110,
+    "patent_number": "JP5896428",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 111,
+    "patent_number": "JP2017148538",
+    "status": "Active",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 112,
+    "patent_number": "US9861382",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 113,
+    "patent_number": "US20130245657",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-04-12",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 114,
+    "patent_number": "JP6081561",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 115,
+    "patent_number": "US20110167620",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 116,
+    "patent_number": "JP2017099917",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 117,
+    "patent_number": "CA2707837",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 118,
+    "patent_number": "JP5896426",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 119,
+    "patent_number": "US20090143801",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-11-06",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 120,
+    "patent_number": "US8403948",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-11-06",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 121,
+    "patent_number": "US20170119427",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-07-26",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 122,
+    "patent_number": "US8418349",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 123,
+    "patent_number": "US8372099",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-30",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 124,
+    "patent_number": "JP2016104161",
+    "status": "Active",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 125,
+    "patent_number": "US10799913",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2032-01-13",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 126,
+    "patent_number": "EP3398540",
+    "status": "Active",
+    "anticipated_expiration_date": "2031-08-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 127,
+    "patent_number": "US10456158",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-07-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 128,
+    "patent_number": "WO2009073608",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 129,
+    "patent_number": "USD0700967",
+    "status": "Status not found",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 130,
+    "patent_number": "US20090143804",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-09-04",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 131,
+    "patent_number": "US8334468",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-12-14",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 132,
+    "patent_number": "JP2012096045",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-12-01",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 133,
+    "patent_number": "JP6364098",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 134,
+    "patent_number": "JP6655666",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2032-04-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 135,
+    "patent_number": "US8742269",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 136,
+    "patent_number": "US8377085",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 137,
+    "patent_number": "US8419758",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2030-06-10",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 138,
+    "patent_number": "US20110178542",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 139,
+    "patent_number": "US8992555",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2029-06-08",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 140,
+    "patent_number": "US8497437",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 141,
+    "patent_number": "US8236020",
+    "status": "Active",
+    "anticipated_expiration_date": "2028-11-06",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US8333778",
+      "US8333779",
+      "US8372101",
+      "US8377085",
+      "US8403949",
+      "US8418349",
+      "US8419758",
+      "US9017355"
+    ]
+  },
+  {
+    "index": 142,
+    "patent_number": "US9161769",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2033-12-07",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 143,
+    "patent_number": "US11730504",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2034-08-18",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 144,
+    "patent_number": "US20200253627",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2034-08-18",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 145,
+    "patent_number": "US12239337",
+    "status": "Active",
+    "anticipated_expiration_date": "2033-03-15",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 146,
+    "patent_number": "EP2692297",
+    "status": "Not-in-force",
+    "anticipated_expiration_date": "2033-07-30",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 147,
+    "patent_number": "US10639053",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2035-01-11",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 148,
+    "patent_number": "US20140031860",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2033-12-07",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 149,
+    "patent_number": "CA2821471",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2033-07-19",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 150,
+    "patent_number": "AU2013207564",
+    "status": "Ceased",
+    "anticipated_expiration_date": "2033-07-16",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 151,
+    "patent_number": "EP2848216",
+    "status": "Not-in-force",
+    "anticipated_expiration_date": "2033-07-30",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 152,
+    "patent_number": "JP6174930",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2033-07-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 153,
+    "patent_number": "US20160030771",
+    "status": "Active",
+    "anticipated_expiration_date": "Anticipated expiration date not found",
+    "adjusted_expiration_date": "2035-01-11",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 154,
+    "patent_number": "JP2014023932",
+    "status": "Expired - Fee Related",
+    "anticipated_expiration_date": "2033-07-25",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  },
+  {
+    "index": 155,
+    "patent_number": "US20230346410",
+    "status": "Active",
+    "anticipated_expiration_date": "2033-03-15",
+    "adjusted_expiration_date": "Adjusted expiration date not found",
+    "related_patents": [
+      "US9161769"
+    ]
+  }
+]
