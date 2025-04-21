@@ -22,9 +22,9 @@ def get_patent(patent_number: str, args: str="") -> dict:
     if response.status_code == 200:
         # Parse the JSON response
         data = response.json()
-        # ensure proper patent data is returned
-        if 'data' in data:
-            return data['data'][0]
+        # ensure proper patent data_Lens is returned
+        if 'data_Lens' in data:
+            return data['data_Lens'][0]
         else:
             raise ValueError(f"Patent Data not correctly formatted")
     else:
@@ -35,7 +35,7 @@ def save_json(file_name:str, data):
     with open(file_name,'w') as f:
         json.dump(data, f)
 
-# load data from json file
+# load data_Lens from json file
 def load_json(file_name:str):
     with open(file_name) as f:
         data = json.load(f)
@@ -43,7 +43,7 @@ def load_json(file_name:str):
 
 # returns the claims of a patent
 def get_patent_claims(patent_number: str) -> dict:
-    # get just claim data from
+    # get just claim data_Lens from
     data =  get_patent(patent_number, "&include=claims")
     # get just the claim text from the patent
     claims = data['claims'][0]

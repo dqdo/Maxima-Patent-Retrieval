@@ -49,7 +49,7 @@ def process_patent_list(input_file, output_directory):
 
 # Specify your paths
 input_file = "input.txt"
-output_directory = "data"
+output_directory = "data_Lens"
 
 # Run the script
 process_patent_list(input_file, output_directory)
