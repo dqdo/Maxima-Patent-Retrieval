@@ -62,18 +62,18 @@ def create_webdriver(browser):
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--window-size=1920,1080")
         options.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
-        return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+        return webdriver.Chrome(options=options)
 
     elif browser == 'firefox':
         options = webdriver.FirefoxOptions()
         options.add_argument("--headless")
-        return webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
+        return webdriver.Firefox(options=options)
 
     elif browser == 'edge':
         options = webdriver.EdgeOptions()
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")
-        return webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
+        return webdriver.Edge(options=options)
 
     else:
         raise ValueError("Unsupported browser type")
