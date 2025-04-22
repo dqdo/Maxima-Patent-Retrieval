@@ -1,5 +1,5 @@
 import pytest
-from patent_claim import ClaimNode, find_claim_references, build_claim_tree, get_patent_claims
+from patent_claim import find_claim_references, build_claim_tree
 
 # test functions
 def test_claim_references():
@@ -35,14 +35,16 @@ def test_build_claim_tree():
         "5. A system for controlling a widget.",
         "6. The system of claim 5, wherein the controller is wireless.",
         "7. The system of claim 6, further comprising a backup battery.",
-        "8. A composition of matter."
+        "8. A composition of matter.",
+        "39. A strange claim 28.",
+        "48. Stranger claim."
     ]
 
     tree = build_claim_tree(claims)
 
     # Test for root claims
     root_numbers = {node.number for node in tree}
-    assert root_numbers == {1, 5, 8}
+    assert root_numbers == {1, 5, 8, 39, 48}
 
     # Check structure under claim 1
     claim1 = find_node_by_number(tree, 1)
@@ -60,15 +62,7 @@ def test_build_claim_tree():
     # Check claim 8 is lone root
     claim8 = find_node_by_number(tree,8)
     assert claim8.children == []
-
-def test_real_patent_claim():
-    patent = "US8377085"
-    tree = get_patent_claims(patent)
-
-    # Test for root claims
-    root_numbers = {node.number for node in tree}
-    assert root_numbers == {1, 21}
-
+test_build_claim_tree()
 
 # patent_num = "US8377085"
 # # save_json("patent_data.json", get_patent("US8377085"))

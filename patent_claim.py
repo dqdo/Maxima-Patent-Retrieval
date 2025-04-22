@@ -30,13 +30,15 @@ class ClaimNode:
             output += child.print_tree(level + 1)
         return output
     
-# returns a list containing all claim reference numbers
+# returns a list containing first claim reference number
 def find_claim_references(claim_text:str) -> list:
     ref_list = list()
     # find all claim # references within the text using regex
     claim_match = re.finditer(r"\bclaim (\d+)\b", claim_text, re.IGNORECASE)
     # return all matching numbers
-    for m in claim_match:
+    for idx,m in enumerate(claim_match):
+        if idx > 0:
+            break
         number = m.group(1)
         ref_list.append(int(number))
     return ref_list
@@ -66,7 +68,10 @@ def build_claim_tree(claims: list) -> list:
         # if not, add the claim as a child to the referenced node(s).
         else:
             for ref in refs:
-                nodes[ref].add_child(node)
+                if ref in nodes: # make sure claim number is in nodes. If not make a root node.
+                    nodes[ref].add_child(node)
+                else:
+                    roots.append(node)
 
     return roots
 
