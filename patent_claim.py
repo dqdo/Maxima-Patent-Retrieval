@@ -3,7 +3,7 @@ import re
 import json
 import os
 from dotenv import load_dotenv
-from claim_retrieval_google import get_default_browser, create_webdriver, get_patent_details
+# from google_scraper import get_default_browser, create_webdriver, get_patent_details
 
 # Load information from Env file
 load_dotenv()
@@ -22,7 +22,7 @@ class ClaimNode:
     def add_child(self, child):
         self.children.append(child)
 
-    ## TODO: print tree from the node downwards
+    ## print tree from the node downwards
     def print_tree(self, level=0):
         indent = "  " * level
         output = f"{indent}- Claim {self.number}: {self.text}\n"
@@ -42,7 +42,7 @@ def find_claim_references(claim_text:str) -> list:
     return ref_list
 
 # build the claim tree given a string of claims
-def build_claim_tree(claims: str) -> list:
+def build_claim_tree(claims: list) -> list:
     nodes = {}
     roots = []
     
@@ -69,16 +69,6 @@ def build_claim_tree(claims: str) -> list:
                 nodes[ref].add_child(node)
 
     return roots
-         
-def get_patent_claims(patent:str) -> ClaimNode:
-    browser = get_default_browser()
-    if browser:
-        driver = create_webdriver(browser)
-    else:
-        raise Exception("Unable to create driver")
-    claims = get_patent_details(patent, driver)
-    roots = build_claim_tree(claims)
-    return roots
 
 # save json to file
 def save_json(file_name:str, data):
@@ -91,8 +81,8 @@ def load_json(file_name:str):
         data = json.load(f)
     return data
 
-patent = "US8377085"
-tree = get_patent_claims(patent)
-for node in tree:
-    print(node.print_tree())
-print(tree)
+# patent = "US8377085"
+# tree = get_patent_claims(patent)
+# for node in tree:
+#     print(node.print_tree())
+# print(tree)

@@ -1,5 +1,7 @@
 import json
 
+from patent_claim import build_claim_tree
+
 # Path to your JSON data_Lens
 JSON_PATH = "patent_status_data/patent_family_set_status.json"
 # Output HTML file
@@ -118,6 +120,11 @@ for p in patents:
     title = p.get("title", "<No title>").strip()
     ant = p.get("anticipated_expiration_date", "").strip()
     adj = p.get("adjusted_expiration_date", "").strip()
+    claims = build_claim_tree(p.get("claims", "<No claims>"))
+    claim_txt = ""
+    for root in claims:
+        claim_txt = claim_txt + "\n" +  root.print_tree()
+
 
     # expiration text
     parts = []
@@ -149,6 +156,10 @@ for p in patents:
         <details>
           <summary>Abstract</summary>
           <p>{abstract}</p>
+        </details>
+        <details>
+          <summary>Claims</summary>
+          <p>{claim_txt}</p>
         </details>
       </div>
     </li>"""
