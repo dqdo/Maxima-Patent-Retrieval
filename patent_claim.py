@@ -3,7 +3,7 @@ import re
 import json
 import os
 from dotenv import load_dotenv
-from ClaimRetrievalGoogle import get_default_browser, create_webdriver, get_patent_details
+from claim_retrieval_google import get_default_browser, create_webdriver, get_patent_details
 
 # Load information from Env file
 load_dotenv()
