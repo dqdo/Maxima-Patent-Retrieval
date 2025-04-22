@@ -1,130 +1,169 @@
 import json
-import plotly.graph_objects as go
 
-# Load JSON data
-with open("data/US8377085_extended_family_status.json", "r", encoding="utf-8") as file:
-    patents = json.load(file)
+# Path to your JSON data_Lens
+JSON_PATH = "patent_status_data/patent_family_set_status.json"
+# Output HTML file
+OUTPUT_HTML = "patents.html"
 
-# Classify status
-def classify_status(status):
-    status = status.lower()
-    if "not found" in status:
-        return "Not Found"
-    elif "active" in status:
-        return "Active"
-    elif any(word in status for word in ["expired", "withdrawn", "ceased", "abandoned"]):
-        return "Expired"
-    else:
-        return "Misc"
+# 1) Load your patent data_Lens
+with open(JSON_PATH, encoding="utf-8") as f:
+    patents = json.load(f)
 
-# Color mapping
-status_colors = {
-    "Active": "red",
-    "Expired": "green",
-    "Misc": "yellow",
-    "Not Found": "gray"
-}
+# 2) Map raw status to CSS class
+def classify_status(raw_status: str) -> str:
+    s = raw_status.lower()
+    if "not found" in s:
+        return "not-found"
+    if "active" in s:
+        return "active"
+    if any(w in s for w in ["expired", "withdrawn", "ceased", "abandoned"]):
+        return "expired"
+    return "misc"
 
-# Prepare data
-y_vals = []
-colors = []
-hover_texts = []
-display_texts = []
+# 3) Build HTML head and CSS (including tooltip styles with dynamic left-side positioning)
+html_head = """<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+  <title>Patent Family Status Overview</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.5em;
+    }
+    .marker {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 4px;
+      margin-right: 8px;
+    }
+    .marker.active    { background: #e74c3c; }
+    .marker.expired   { background: #27ae60; }
+    .marker.misc      { background: #f1c40f; }
+    .marker.not-found { background: #7f8c8d; }
 
-for i, patent in enumerate(reversed(patents)):  # reversed for top-down layout
-    index = patent.get("index", i)
-    patent_num = patent.get("patent_number", "N/A")
-    raw_status = patent.get("status", "not found")
-    status = classify_status(raw_status)
-    color = status_colors.get(status, "gray")
+    /* Tooltip container */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+    }
+    /* Tooltip text positioned directly to the left with a small margin */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 240px;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      text-align: left;
+      border-radius: 4px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      right: 100%;          /* align right edge to parent */
+      margin-right: 8px;    /* small gap */
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.2s;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
 
-    y_vals.append(i)
-    colors.append(color)
-
-    # Expiration details
-    ant_exp = patent.get("anticipated_expiration_date", "")
-    adj_exp = patent.get("adjusted_expiration_date", "")
-
-    exp_parts = []
-    if "not found" not in ant_exp.lower():
-        exp_parts.append(f"Anticipated Expiration Date: {ant_exp}")
-    if "not found" not in adj_exp.lower():
-        exp_parts.append(f"Adjusted Expiration Date: {adj_exp}")
-    expiration_text = " | ".join(exp_parts) if exp_parts else "Expiration date not found"
-
-    # Label for the point
-    label = f"{index}: {patent_num} | {status} | {expiration_text}" if status != "Not Found" else f"{index}: {patent_num} | not found"
-    display_texts.append(label)
-
-    # Hover text
-    hover = (
-        f"<b>Index:</b> {index}<br>"
-        f"<b>Patent:</b> {patent_num}<br>"
-        f"<b>Status:</b> {raw_status}<br>"
-    )
-    if status != "Not Found":
-        hover += f"<b>{expiration_text}</b>"
-    else:
-        hover += "<b>Patent details not found</b>"
-
-    hover_texts.append(hover)
-
-# Create figure
-fig = go.Figure()
-
-fig.add_trace(go.Scatter(
-    x=[0] * len(y_vals),
-    y=y_vals,
-    mode='markers+text',
-    marker=dict(color=colors, size=18),
-    text=display_texts,
-    textposition="middle right",
-    hovertext=hover_texts,
-    hoverinfo="text"
-))
-
-# Layout settings
-fig.update_layout(
-    title="Patent Family Status Overview (Hover to View Details)",
-    xaxis=dict(visible=False),
-    yaxis=dict(
-        tickvals=y_vals,
-        ticktext=[''] * len(y_vals),
-        showgrid=False
-    ),
-    height=max(500, len(patents) * 60),
-    showlegend=False,
-    margin=dict(l=130, r=130, t=80, b=50),
-    dragmode=False
-)
-
-# Export to HTML with selectable text below chart
-html_output = fig.to_html(
-    include_plotlyjs='cdn',
-    config={
-        'displayModeBar': False,
-        'staticPlot': False
-    },
-    full_html=False
-)
-
-# Add text labels for selection
-selectable_text_block = "<div style='margin:30px;font-family:monospace;'>"
-selectable_text_block += "<h3>Patent Status List (Selectable)</h3><pre style='white-space:pre-wrap;'>"
-selectable_text_block += "\n".join(display_texts)
-selectable_text_block += "</pre></div>"
-
-# Combine HTML
-final_html = f"""
-<html>
-<head><meta charset="utf-8"><title>Patent Status Visualization</title></head>
+    details {
+      margin-left: 20px;
+      margin-top: 4px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    details p {
+      margin: 0.5em 0 0 0;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+  </style>
+</head>
 <body>
-{html_output}
-{selectable_text_block}
-</body>
-</html>
-"""
+  <h1>Patent Family Status Overview</h1>
+  <ul class=\"timeline\">"""
 
-# Save the combined HTML
-with open("patent_status_scrollable_with_text.html", "w", encoding="utf-8") as f:
-    f.write(final_html)
+# 4) Generate each entry with tooltip hover and collapsible abstract
+html_body = []
+for p in patents:
+    idx = p.get("index", "?")
+    num = p.get("patent_number", "N/A")
+    raw = p.get("status", "Not Found")
+    cls = classify_status(raw)
+    title = p.get("title", "<No title>").strip()
+    ant = p.get("anticipated_expiration_date", "").strip()
+    adj = p.get("adjusted_expiration_date", "").strip()
+
+    # expiration text
+    parts = []
+    if ant and "not found" not in ant.lower():
+        parts.append(f"Anticipated Expiration Date: {ant}")
+    if adj and "not found" not in adj.lower():
+        parts.append(f"Adjusted Expiration Date: {adj}")
+    exp_text = " | ".join(parts) or "Expiration date not found"
+
+    # label and hover text
+    label = f"{idx}: Patent Number: {num} | Status: {raw} | Title: {title} | {exp_text}"
+    hover_text = (
+        f"Index: {idx}\n"
+        f"Patent: {num}\n"
+        f"Status: {raw}\n"
+        f"Title: {title}\n"
+        f"{exp_text}"
+    )
+
+    abstract = p.get("abstract", "Abstract not found").strip()
+
+    html_body.append(f"""
+    <li class=\"entry\"> 
+      <span class=\"marker {cls}\"></span>
+      <div>
+        <span class=\"tooltip\">{label}
+          <span class=\"tooltiptext\">{hover_text}</span>
+        </span>
+        <details>
+          <summary>Abstract</summary>
+          <p>{abstract}</p>
+        </details>
+      </div>
+    </li>"""
+    )
+
+# 5) Close out HTML
+html_tail = """
+  </ul>
+</body>
+</html>"""
+
+# 6) Write to file
+with open(OUTPUT_HTML, 'w', encoding='utf-8') as out:
+    out.write(html_head)
+    out.write("\n".join(html_body))
+    out.write(html_tail)
+
+print(f"✅ Generated '{OUTPUT_HTML}' with left‐side hover tooltips and collapsible abstracts.")

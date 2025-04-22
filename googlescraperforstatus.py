@@ -101,6 +101,16 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
     return {
         "index": index,
         "patent_number": patent_num,
+        "title": extract(
+            "//h1[@id='title' and contains(@class, 'scroll-target')"
+            " and contains(@class, 'style-scope') and contains(@class, 'patent-result')]",
+            "Title"
+        ),
+        "abstract": extract(
+            "//*[@id='text']//abstract/div"
+            "[contains(@class, 'abstract') and contains(@class, 'style-scope') and contains(@class, 'patent-text')]",
+            "Abstract"
+        ),
         "status": extract(
             "//div[contains(@class, 'event') and .//div[text()='Status']]//span[contains(@class, 'title-text')]",
             "Status"

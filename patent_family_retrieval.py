@@ -3,7 +3,7 @@ import json
 from collections import defaultdict
 
 # Directories
-input_dir = 'data'
+input_dir = 'data_Lens'
 output_dir = 'patent_family_data'
 
 # Ensure output directory exists
@@ -24,16 +24,16 @@ for filename in os.listdir(input_dir):
                 print(f"Failed to decode {filename}")
                 continue
 
-        # Skip files with empty data list
-        if not data.get("data"):
-            print(f"Skipping {filename} due to empty data.")
+        # Skip files with empty data_Lens list
+        if not data.get("data_Lens"):
+            print(f"Skipping {filename} due to empty data_Lens.")
             continue
 
         # Get the main patent number from the filename (strip .json)
         main_patent_number = os.path.splitext(filename)[0]
 
         # Navigate to the extended family members
-        extended_family_members = data["data"][0].get('families', {}).get('extended_family', {}).get('members', [])
+        extended_family_members = data["data_Lens"][0].get('families', {}).get('extended_family', {}).get('members', [])
 
         # Handle single object vs list
         if isinstance(extended_family_members, dict):
