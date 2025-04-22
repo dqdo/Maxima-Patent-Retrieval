@@ -97,6 +97,17 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
             return el.text.strip()
         except Exception:
             return f"{label} not found"
+        
+    # extracts claims from given xpath and label
+    def extract_claims(xpath, label):
+        try:
+            els = driver.find_elements(By.XPATH, xpath)
+            claims = list()
+            for el in els:
+                claims.append(el.text)
+            return claims
+        except Exception:
+            return f"{label} not found"
 
     return {
         "index": index,
@@ -123,7 +134,11 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
             "//div[contains(@class, 'event') and .//span[contains(text(),'Adjusted expiration')]]/div[contains(@class, 'legal-status')]",
             "Adjusted expiration date"
         ),
-        "related_patents": related_patents or []
+        "related_patents": related_patents or [],
+        "claims": extract_claims(
+            "//patent-text[@name='claims']//section[@id='text']/div[@class='claims style-scope patent-text']/div",
+            "Claim text"
+        )
     }
 
 # Directories
@@ -157,7 +172,7 @@ if default_browser:
             print(f"Error processing {main_patent}: {e}")
 
     # Save all results into one file
-    final_output_path = os.path.join(status_data_dir, 'patent_family_set_status.json')
+    final_output_path = os.path.join(status_data_dir, 'patent_family_set_status2.json')
     with open(final_output_path, 'w', encoding='utf-8') as f:
         json.dump(all_patent_data, f, indent=2, ensure_ascii=False)
 
