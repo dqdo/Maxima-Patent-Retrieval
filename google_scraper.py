@@ -112,6 +112,7 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
     return {
         "index": index,
         "patent_number": patent_num,
+        "link": driver.current_url,
         "title": extract(
             "//h1[@id='title' and contains(@class, 'scroll-target')"
             " and contains(@class, 'style-scope') and contains(@class, 'patent-result')]",
@@ -172,7 +173,7 @@ if default_browser:
             print(f"Error processing {main_patent}: {e}")
 
     # Save all results into one file
-    final_output_path = os.path.join(status_data_dir, 'patent_family_set_status2.json')
+    final_output_path = os.path.join(status_data_dir, 'patent_family_set_status.json')
     with open(final_output_path, 'w', encoding='utf-8') as f:
         json.dump(all_patent_data, f, indent=2, ensure_ascii=False)
 
