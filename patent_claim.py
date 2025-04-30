@@ -51,7 +51,7 @@ def build_claim_tree(claims: list) -> list:
     # first, create our claim nodes.
     for claim in claims:
         # break the claim into number and text
-        match = re.match(r'^(\d+)\.\s+(.*)', claim.strip())
+        match = re.match(r'^(\d+)\.\s+((.*\n*)*)', claim.strip())
         if not match:
             continue
         number = int(match.group(1))
