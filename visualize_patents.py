@@ -1,13 +1,12 @@
 import json
-
 from patent_claim import build_claim_tree
 
-# Path to your JSON data_Lens
+# Path to your JSON data
 JSON_PATH = "patent_status_data/patent_family_set_status.json"
 # Output HTML file
 OUTPUT_HTML = "patents.html"
 
-# 1) Load your patent data_Lens
+# 1) Load your patent data
 with open(JSON_PATH, encoding="utf-8") as f:
     patents = json.load(f)
 
@@ -22,12 +21,12 @@ def classify_status(raw_status: str) -> str:
         return "expired"
     return "misc"
 
-# 3) Build HTML head and CSS (including tooltip styles with dynamic left-side positioning)
+# 3) Build HTML head and CSS (including search bar and tooltip styles)
 html_head = """<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
 <head>
-  <meta charset=\"UTF-8\" />
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patent Family Status Overview</title>
   <style>
     body {
@@ -35,6 +34,13 @@ html_head = """<!DOCTYPE html>
       padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
+    }
+    #searchInput {
+      margin: 20px 0;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1em;
     }
     .timeline {
       list-style: none;
@@ -59,13 +65,11 @@ html_head = """<!DOCTYPE html>
     .marker.misc      { background: #f1c40f; }
     .marker.not-found { background: #7f8c8d; }
 
-    /* Tooltip container */
     .tooltip {
       position: relative;
       display: inline-block;
       cursor: help;
     }
-    /* Tooltip text positioned directly to the left with a small margin */
     .tooltip .tooltiptext {
       visibility: hidden;
       width: 240px;
@@ -76,10 +80,9 @@ html_head = """<!DOCTYPE html>
       padding: 8px;
       position: absolute;
       z-index: 1;
-      top: 50%;
-      right: 100%;          /* align right edge to parent */
-      margin-right: 8px;    /* small gap */
-      transform: translateY(-50%);
+      bottom: 100%; /* above the label */
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px); /* center it horizontally, and nudge up */
       opacity: 0;
       transition: opacity 0.2s;
       white-space: pre-wrap;
@@ -90,7 +93,6 @@ html_head = """<!DOCTYPE html>
       visibility: visible;
       opacity: 1;
     }
-
     details {
       margin-left: 20px;
       margin-top: 4px;
@@ -108,9 +110,10 @@ html_head = """<!DOCTYPE html>
 </head>
 <body>
   <h1>Patent Family Status Overview</h1>
-  <ul class=\"timeline\">"""
+  <input type="text" id="searchInput" placeholder="Search by Patent Number..." />
+  <ul class="timeline">"""
 
-# 4) Generate each entry with tooltip hover and collapsible abstract
+# 4) Generate each entry
 html_body = []
 for p in patents:
     idx = p.get("index", "?")
@@ -123,10 +126,9 @@ for p in patents:
     claims = build_claim_tree(p.get("claims", "<No claims>"))
     claim_txt = ""
     for root in claims:
-        claim_txt = claim_txt + "\n" +  root.print_tree()
+        claim_txt += "\n" + root.print_tree()
+    link = p.get("link", "<No link>")
 
-
-    # expiration text
     parts = []
     if ant and "not found" not in ant.lower():
         parts.append(f"Anticipated Expiration Date: {ant}")
@@ -134,8 +136,9 @@ for p in patents:
         parts.append(f"Adjusted Expiration Date: {adj}")
     exp_text = " | ".join(parts) or "Expiration date not found"
 
-    # label and hover text
-    label = f"{idx}: Patent Number: {num} | Status: {raw} | Title: {title} | {exp_text}"
+    link_html = f'<a href="{link}" target="_blank" rel="noopener noreferrer">{num}</a>' if link and link.startswith("http") else num
+    label = f"{idx}: Patent Number: {link_html} | Status: {raw} | Title: {title} | {exp_text}"
+
     hover_text = (
         f"Index: {idx}\n"
         f"Patent: {num}\n"
@@ -147,11 +150,11 @@ for p in patents:
     abstract = p.get("abstract", "Abstract not found").strip()
 
     html_body.append(f"""
-    <li class=\"entry\"> 
-      <span class=\"marker {cls}\"></span>
+    <li class="entry"> 
+      <span class="marker {cls}"></span>
       <div>
-        <span class=\"tooltip\">{label}
-          <span class=\"tooltiptext\">{hover_text}</span>
+        <span class="tooltip">{label}
+          <span class="tooltiptext">{hover_text}</span>
         </span>
         <details>
           <summary>Abstract</summary>
@@ -162,19 +165,26 @@ for p in patents:
           <p>{claim_txt}</p>
         </details>
       </div>
-    </li>"""
-    )
+    </li>""")
 
-# 5) Close out HTML
+# 5) Closing HTML and JS
 html_tail = """
   </ul>
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function () {
+      const filter = this.value.toLowerCase();
+      const entries = document.querySelectorAll(".entry");
+      entries.forEach(entry => {
+        const text = entry.textContent.toLowerCase();
+        entry.style.display = text.includes(filter) ? "flex" : "none";
+      });
+    });
+  </script>
 </body>
 </html>"""
 
-# 6) Write to file
+# 6) Write output
 with open(OUTPUT_HTML, 'w', encoding='utf-8') as out:
     out.write(html_head)
     out.write("\n".join(html_body))
     out.write(html_tail)
-
-print(f"✅ Generated '{OUTPUT_HTML}' with left‐side hover tooltips and collapsible abstracts.")
