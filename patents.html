@@ -11,6 +11,13 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    #searchInput {
+      margin: 20px 0;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1em;
+    }
     .timeline {
       list-style: none;
       padding: 0;
@@ -34,13 +41,11 @@
     .marker.misc      { background: #f1c40f; }
     .marker.not-found { background: #7f8c8d; }
 
-    /* Tooltip container */
     .tooltip {
       position: relative;
       display: inline-block;
       cursor: help;
     }
-    /* Tooltip text positioned directly to the left with a small margin */
     .tooltip .tooltiptext {
       visibility: hidden;
       width: 240px;
@@ -51,10 +56,9 @@
       padding: 8px;
       position: absolute;
       z-index: 1;
-      top: 50%;
-      right: 100%;          /* align right edge to parent */
-      margin-right: 8px;    /* small gap */
-      transform: translateY(-50%);
+      bottom: 100%; /* above the label */
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px); /* center it horizontally, and nudge up */
       opacity: 0;
       transition: opacity 0.2s;
       white-space: pre-wrap;
@@ -65,7 +69,6 @@
       visibility: visible;
       opacity: 1;
     }
-
     details {
       margin-left: 20px;
       margin-top: 4px;
@@ -83,11 +86,12 @@
 </head>
 <body>
   <h1>Patent Family Status Overview</h1>
+  <input type="text" id="searchInput" placeholder="Search by Patent Number..." />
   <ul class="timeline">
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">0: Patent Number: JP2013502998 | Status: Withdrawn | Title: Two-stage switch for cordless, hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">0: Patent Number: <a href="https://patents.google.com/patent/JP2013502998/en" target="_blank" rel="noopener noreferrer">JP2013502998</a> | Status: Withdrawn | Title: Two-stage switch for cordless, hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 0
 Patent: JP2013502998
 Status: Withdrawn
@@ -108,7 +112,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">1: Patent Number: US8372101 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">1: Patent Number: <a href="https://patents.google.com/patent/US8372101/en" target="_blank" rel="noopener noreferrer">US8372101</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 1
 Patent: US8372101
 Status: Active
@@ -162,7 +166,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">2: Patent Number: CA2750482 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">2: Patent Number: <a href="https://patents.google.com/patent/CA2750482/en" target="_blank" rel="noopener noreferrer">CA2750482</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 2
 Patent: CA2750482
 Status: Active
@@ -218,7 +222,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">3: Patent Number: US20130046322 | Status: Expired - Fee Related | Title: Method of Switching a Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">3: Patent Number: <a href="https://patents.google.com/patent/US20130046322/en" target="_blank" rel="noopener noreferrer">US20130046322</a> | Status: Expired - Fee Related | Title: Method of Switching a Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 3
 Patent: US20130046322
 Status: Expired - Fee Related
@@ -258,7 +262,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">4: Patent Number: US8419757 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-23
+        <span class="tooltip">4: Patent Number: <a href="https://patents.google.com/patent/US8419757/en" target="_blank" rel="noopener noreferrer">US8419757</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-23
           <span class="tooltiptext">Index: 4
 Patent: US8419757
 Status: Active
@@ -306,7 +310,7 @@ Adjusted Expiration Date: 2029-12-23</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">5: Patent Number: JP5859905 | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">5: Patent Number: <a href="https://patents.google.com/patent/JP5859905/en" target="_blank" rel="noopener noreferrer">JP5859905</a> | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 5
 Patent: JP5859905
 Status: Active
@@ -327,7 +331,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">6: Patent Number: US9017355 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2029-01-14
+        <span class="tooltip">6: Patent Number: <a href="https://patents.google.com/patent/US9017355/en" target="_blank" rel="noopener noreferrer">US9017355</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2029-01-14
           <span class="tooltiptext">Index: 6
 Patent: US9017355
 Status: Active
@@ -369,7 +373,7 @@ Adjusted Expiration Date: 2029-01-14</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">7: Patent Number: JP6438998 | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">7: Patent Number: <a href="https://patents.google.com/patent/JP6438998/en" target="_blank" rel="noopener noreferrer">JP6438998</a> | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 7
 Patent: JP6438998
 Status: Active
@@ -390,7 +394,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">8: Patent Number: US20130046291 | Status: Expired - Fee Related | Title: Method of Switching a Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">8: Patent Number: <a href="https://patents.google.com/patent/US20130046291/en" target="_blank" rel="noopener noreferrer">US20130046291</a> | Status: Expired - Fee Related | Title: Method of Switching a Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 8
 Patent: US20130046291
 Status: Expired - Fee Related
@@ -430,7 +434,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">9: Patent Number: JP5818354 | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">9: Patent Number: <a href="https://patents.google.com/patent/JP5818354/en" target="_blank" rel="noopener noreferrer">JP5818354</a> | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 9
 Patent: JP5818354
 Status: Expired - Fee Related
@@ -451,7 +455,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">10: Patent Number: US20150157354 | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">10: Patent Number: <a href="https://patents.google.com/patent/US20150157354/en" target="_blank" rel="noopener noreferrer">US20150157354</a> | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 10
 Patent: US20150157354
 Status: Active
@@ -495,7 +499,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">11: Patent Number: US8338726 | Status: Expired - Fee Related | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-17
+        <span class="tooltip">11: Patent Number: <a href="https://patents.google.com/patent/US8338726/en" target="_blank" rel="noopener noreferrer">US8338726</a> | Status: Expired - Fee Related | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-17
           <span class="tooltiptext">Index: 11
 Patent: US8338726
 Status: Expired - Fee Related
@@ -543,7 +547,7 @@ Adjusted Expiration Date: 2029-12-17</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">12: Patent Number: AU2010286689 | Status: Ceased | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2030-08-26
+        <span class="tooltip">12: Patent Number: <a href="https://patents.google.com/patent/AU2010286689/en" target="_blank" rel="noopener noreferrer">AU2010286689</a> | Status: Ceased | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2030-08-26
           <span class="tooltiptext">Index: 12
 Patent: AU2010286689
 Status: Ceased
@@ -610,7 +614,7 @@ Anticipated Expiration Date: 2030-08-26</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">13: Patent Number: US20140236202 | Status: Abandoned | Title: Method for Operating a Two-Stage Switch for Surgical Device | Expiration date not found
+        <span class="tooltip">13: Patent Number: <a href="https://patents.google.com/patent/US20140236202/en" target="_blank" rel="noopener noreferrer">US20140236202</a> | Status: Abandoned | Title: Method for Operating a Two-Stage Switch for Surgical Device | Expiration date not found
           <span class="tooltiptext">Index: 13
 Patent: US20140236202
 Status: Abandoned
@@ -656,7 +660,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">14: Patent Number: EP2422721 | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">14: Patent Number: <a href="https://patents.google.com/patent/EP2422721/en" target="_blank" rel="noopener noreferrer">EP2422721</a> | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 14
 Patent: EP2422721
 Status: Active
@@ -677,7 +681,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">15: Patent Number: US20100004668 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device and Method | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">15: Patent Number: <a href="https://patents.google.com/patent/US20100004668/en" target="_blank" rel="noopener noreferrer">US20100004668</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device and Method | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 15
 Patent: US20100004668
 Status: Active
@@ -721,7 +725,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">16: Patent Number: EP2433578 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">16: Patent Number: <a href="https://patents.google.com/patent/EP2433578/en" target="_blank" rel="noopener noreferrer">EP2433578</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 16
 Patent: EP2433578
 Status: Active
@@ -742,7 +746,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">17: Patent Number: US11478820 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2028-12-09
+        <span class="tooltip">17: Patent Number: <a href="https://patents.google.com/patent/US11478820/en" target="_blank" rel="noopener noreferrer">US11478820</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2028-12-09
           <span class="tooltiptext">Index: 17
 Patent: US11478820
 Status: Active
@@ -775,7 +779,7 @@ Adjusted Expiration Date: 2028-12-09</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">18: Patent Number: US9782180 | Status: Active | Title: Method of maintaining constant movement of a cutting blade of an ultrasonic waveguide | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">18: Patent Number: <a href="https://patents.google.com/patent/US9782180/en" target="_blank" rel="noopener noreferrer">US9782180</a> | Status: Active | Title: Method of maintaining constant movement of a cutting blade of an ultrasonic waveguide | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 18
 Patent: US9782180
 Status: Active
@@ -808,7 +812,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">19: Patent Number: CA3022254 | Status: Expired - Fee Related | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
+        <span class="tooltip">19: Patent Number: <a href="https://patents.google.com/patent/CA3022254/en" target="_blank" rel="noopener noreferrer">CA3022254</a> | Status: Expired - Fee Related | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
           <span class="tooltiptext">Index: 19
 Patent: CA3022254
 Status: Expired - Fee Related
@@ -852,7 +856,7 @@ Anticipated Expiration Date: 2032-04-13</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">20: Patent Number: US20110172689 | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade on an Ultrasonic Waveguide | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">20: Patent Number: <a href="https://patents.google.com/patent/US20110172689/en" target="_blank" rel="noopener noreferrer">US20110172689</a> | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade on an Ultrasonic Waveguide | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 20
 Patent: US20110172689
 Status: Active
@@ -895,7 +899,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">21: Patent Number: US8425545 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device and method | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">21: Patent Number: <a href="https://patents.google.com/patent/US8425545/en" target="_blank" rel="noopener noreferrer">US8425545</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device and method | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 21
 Patent: US8425545
 Status: Active
@@ -941,7 +945,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">22: Patent Number: JP5813954 | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">22: Patent Number: <a href="https://patents.google.com/patent/JP5813954/en" target="_blank" rel="noopener noreferrer">JP5813954</a> | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 22
 Patent: JP5813954
 Status: Active
@@ -962,7 +966,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">23: Patent Number: USD0700966 | Status: Status not found | Title: Title not found | Expiration date not found
+        <span class="tooltip">23: Patent Number: <a href="https://patents.google.com/patent/USD0700966/en" target="_blank" rel="noopener noreferrer">USD0700966</a> | Status: Status not found | Title: Title not found | Expiration date not found
           <span class="tooltiptext">Index: 23
 Patent: USD0700966
 Status: Status not found
@@ -983,7 +987,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">24: Patent Number: US20150265307 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">24: Patent Number: <a href="https://patents.google.com/patent/US20150265307/en" target="_blank" rel="noopener noreferrer">US20150265307</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 24
 Patent: US20150265307
 Status: Active
@@ -1026,7 +1030,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">25: Patent Number: CA2774751 | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
+        <span class="tooltip">25: Patent Number: <a href="https://patents.google.com/patent/CA2774751/en" target="_blank" rel="noopener noreferrer">CA2774751</a> | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
           <span class="tooltiptext">Index: 25
 Patent: CA2774751
 Status: Active
@@ -1064,7 +1068,7 @@ Anticipated Expiration Date: 2032-04-13</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">26: Patent Number: AU2017203336 | Status: Ceased | Title: Battery powered modular surgical device | Anticipated Expiration Date: 2031-08-24
+        <span class="tooltip">26: Patent Number: <a href="https://patents.google.com/patent/AU2017203336/en" target="_blank" rel="noopener noreferrer">AU2017203336</a> | Status: Ceased | Title: Battery powered modular surgical device | Anticipated Expiration Date: 2031-08-24
           <span class="tooltiptext">Index: 26
 Patent: AU2017203336
 Status: Ceased
@@ -1085,7 +1089,7 @@ Anticipated Expiration Date: 2031-08-24</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">27: Patent Number: US8444662 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-28
+        <span class="tooltip">27: Patent Number: <a href="https://patents.google.com/patent/US8444662/en" target="_blank" rel="noopener noreferrer">US8444662</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-28
           <span class="tooltiptext">Index: 27
 Patent: US8444662
 Status: Active
@@ -1126,7 +1130,7 @@ Adjusted Expiration Date: 2030-06-28</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">28: Patent Number: US8403950 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-09-12
+        <span class="tooltip">28: Patent Number: <a href="https://patents.google.com/patent/US8403950/en" target="_blank" rel="noopener noreferrer">US8403950</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-09-12
           <span class="tooltiptext">Index: 28
 Patent: US8403950
 Status: Active
@@ -1167,7 +1171,7 @@ Adjusted Expiration Date: 2029-09-12</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">29: Patent Number: JP2011505226 | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">29: Patent Number: <a href="https://patents.google.com/patent/JP2011505226/en" target="_blank" rel="noopener noreferrer">JP2011505226</a> | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 29
 Patent: JP2011505226
 Status: Active
@@ -1188,7 +1192,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">30: Patent Number: JP2016073730 | Status: Active | Title: Cordless handheld ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">30: Patent Number: <a href="https://patents.google.com/patent/JP2016073730/en" target="_blank" rel="noopener noreferrer">JP2016073730</a> | Status: Active | Title: Cordless handheld ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 30
 Patent: JP2016073730
 Status: Active
@@ -1209,7 +1213,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">31: Patent Number: US20100000074 | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-05-10
+        <span class="tooltip">31: Patent Number: <a href="https://patents.google.com/patent/US20100000074/en" target="_blank" rel="noopener noreferrer">US20100000074</a> | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-05-10
           <span class="tooltiptext">Index: 31
 Patent: US20100000074
 Status: Active
@@ -1253,7 +1257,7 @@ Adjusted Expiration Date: 2029-05-10</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">32: Patent Number: US20180036031 | Status: Active | Title: Cordless hand-held ultrasonic surgical device | Adjusted Expiration Date: 2029-07-08
+        <span class="tooltip">32: Patent Number: <a href="https://patents.google.com/patent/US20180036031/en" target="_blank" rel="noopener noreferrer">US20180036031</a> | Status: Active | Title: Cordless hand-held ultrasonic surgical device | Adjusted Expiration Date: 2029-07-08
           <span class="tooltiptext">Index: 32
 Patent: US20180036031
 Status: Active
@@ -1296,7 +1300,7 @@ Adjusted Expiration Date: 2029-07-08</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">33: Patent Number: US8061014 | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-05-10
+        <span class="tooltip">33: Patent Number: <a href="https://patents.google.com/patent/US8061014/en" target="_blank" rel="noopener noreferrer">US8061014</a> | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-05-10
           <span class="tooltiptext">Index: 33
 Patent: US8061014
 Status: Active
@@ -1332,7 +1336,7 @@ Adjusted Expiration Date: 2029-05-10</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">34: Patent Number: US20090143798 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-10
+        <span class="tooltip">34: Patent Number: <a href="https://patents.google.com/patent/US20090143798/en" target="_blank" rel="noopener noreferrer">US20090143798</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-10
           <span class="tooltiptext">Index: 34
 Patent: US20090143798
 Status: Active
@@ -1367,7 +1371,7 @@ Adjusted Expiration Date: 2030-06-10</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">35: Patent Number: AU2014203804 | Status: Ceased | Title: Battery powered modular surgical device | Anticipated Expiration Date: 2031-08-24
+        <span class="tooltip">35: Patent Number: <a href="https://patents.google.com/patent/AU2014203804/en" target="_blank" rel="noopener noreferrer">AU2014203804</a> | Status: Ceased | Title: Battery powered modular surgical device | Anticipated Expiration Date: 2031-08-24
           <span class="tooltiptext">Index: 35
 Patent: AU2014203804
 Status: Ceased
@@ -1409,7 +1413,7 @@ Anticipated Expiration Date: 2031-08-24</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">36: Patent Number: JP2012096046 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">36: Patent Number: <a href="https://patents.google.com/patent/JP2012096046/en" target="_blank" rel="noopener noreferrer">JP2012096046</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 36
 Patent: JP2012096046
 Status: Active
@@ -1430,7 +1434,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">37: Patent Number: US20170367726 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">37: Patent Number: <a href="https://patents.google.com/patent/US20170367726/en" target="_blank" rel="noopener noreferrer">US20170367726</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 37
 Patent: US20170367726
 Status: Active
@@ -1473,7 +1477,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">38: Patent Number: EP3263055 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">38: Patent Number: <a href="https://patents.google.com/patent/EP3263055/en" target="_blank" rel="noopener noreferrer">EP3263055</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 38
 Patent: EP3263055
 Status: Active
@@ -1494,7 +1498,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">39: Patent Number: JP6173496 | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">39: Patent Number: <a href="https://patents.google.com/patent/JP6173496/en" target="_blank" rel="noopener noreferrer">JP6173496</a> | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 39
 Patent: JP6173496
 Status: Active
@@ -1515,7 +1519,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">40: Patent Number: USD0691265 | Status: Status not found | Title: Title not found | Expiration date not found
+        <span class="tooltip">40: Patent Number: <a href="https://patents.google.com/patent/USD0691265/en" target="_blank" rel="noopener noreferrer">USD0691265</a> | Status: Status not found | Title: Title not found | Expiration date not found
           <span class="tooltiptext">Index: 40
 Patent: USD0691265
 Status: Status not found
@@ -1536,7 +1540,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">41: Patent Number: US20130046290 | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">41: Patent Number: <a href="https://patents.google.com/patent/US20130046290/en" target="_blank" rel="noopener noreferrer">US20130046290</a> | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 41
 Patent: US20130046290
 Status: Expired - Fee Related
@@ -1579,7 +1583,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">42: Patent Number: US9872696 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">42: Patent Number: <a href="https://patents.google.com/patent/US9872696/en" target="_blank" rel="noopener noreferrer">US9872696</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 42
 Patent: US9872696
 Status: Active
@@ -1622,7 +1626,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">43: Patent Number: US20090143797 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-23
+        <span class="tooltip">43: Patent Number: <a href="https://patents.google.com/patent/US20090143797/en" target="_blank" rel="noopener noreferrer">US20090143797</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-23
           <span class="tooltiptext">Index: 43
 Patent: US20090143797
 Status: Active
@@ -1668,7 +1672,7 @@ Adjusted Expiration Date: 2029-12-23</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">44: Patent Number: JP2015231551 | Status: Expired - Fee Related | Title: Battery driven hand carry ultrasonic surgery cauterizing device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">44: Patent Number: <a href="https://patents.google.com/patent/JP2015231551/en" target="_blank" rel="noopener noreferrer">JP2015231551</a> | Status: Expired - Fee Related | Title: Battery driven hand carry ultrasonic surgery cauterizing device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 44
 Patent: JP2015231551
 Status: Expired - Fee Related
@@ -1689,7 +1693,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">45: Patent Number: EP3087936 | Status: Ceased | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Expiration date not found
+        <span class="tooltip">45: Patent Number: <a href="https://patents.google.com/patent/EP3087936/en" target="_blank" rel="noopener noreferrer">EP3087936</a> | Status: Ceased | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 45
 Patent: EP3087936
 Status: Ceased
@@ -1717,7 +1721,7 @@ maintain the battery in a non-discharge state if the current state of electrical
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">46: Patent Number: US20120221031 | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade of an Ultrasonic Waveguide | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">46: Patent Number: <a href="https://patents.google.com/patent/US20120221031/en" target="_blank" rel="noopener noreferrer">US20120221031</a> | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade of an Ultrasonic Waveguide | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 46
 Patent: US20120221031
 Status: Active
@@ -1760,7 +1764,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">47: Patent Number: US9107690 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2029-05-05
+        <span class="tooltip">47: Patent Number: <a href="https://patents.google.com/patent/US9107690/en" target="_blank" rel="noopener noreferrer">US9107690</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2029-05-05
           <span class="tooltiptext">Index: 47
 Patent: US9107690
 Status: Active
@@ -1802,7 +1806,7 @@ Adjusted Expiration Date: 2029-05-05</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">48: Patent Number: US20130341165 | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">48: Patent Number: <a href="https://patents.google.com/patent/US20130341165/en" target="_blank" rel="noopener noreferrer">US20130341165</a> | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 48
 Patent: US20130341165
 Status: Expired - Fee Related
@@ -1846,7 +1850,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">49: Patent Number: US20210107031 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2028-12-09
+        <span class="tooltip">49: Patent Number: <a href="https://patents.google.com/patent/US20210107031/en" target="_blank" rel="noopener noreferrer">US20210107031</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2028-12-09
           <span class="tooltiptext">Index: 49
 Patent: US20210107031
 Status: Active
@@ -1879,7 +1883,7 @@ Adjusted Expiration Date: 2028-12-09</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">50: Patent Number: US20110251632 | Status: Active | Title: Method of Powering a Surgical Instrument | Adjusted Expiration Date: 2029-06-08
+        <span class="tooltip">50: Patent Number: <a href="https://patents.google.com/patent/US20110251632/en" target="_blank" rel="noopener noreferrer">US20110251632</a> | Status: Active | Title: Method of Powering a Surgical Instrument | Adjusted Expiration Date: 2029-06-08
           <span class="tooltiptext">Index: 50
 Patent: US20110251632
 Status: Active
@@ -1924,7 +1928,7 @@ Adjusted Expiration Date: 2029-06-08</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">51: Patent Number: AU2008334050 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">51: Patent Number: <a href="https://patents.google.com/patent/AU2008334050/en" target="_blank" rel="noopener noreferrer">AU2008334050</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 51
 Patent: AU2008334050
 Status: Active
@@ -1945,7 +1949,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">52: Patent Number: US20090143799 | Status: Abandoned | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Expiration date not found
+        <span class="tooltip">52: Patent Number: <a href="https://patents.google.com/patent/US20090143799/en" target="_blank" rel="noopener noreferrer">US20090143799</a> | Status: Abandoned | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Expiration date not found
           <span class="tooltiptext">Index: 52
 Patent: US20090143799
 Status: Abandoned
@@ -1988,7 +1992,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">53: Patent Number: US9084625 | Status: Active | Title: Battery assembly for battery-powered surgical instruments | Adjusted Expiration Date: 2029-04-12
+        <span class="tooltip">53: Patent Number: <a href="https://patents.google.com/patent/US9084625/en" target="_blank" rel="noopener noreferrer">US9084625</a> | Status: Active | Title: Battery assembly for battery-powered surgical instruments | Adjusted Expiration Date: 2029-04-12
           <span class="tooltiptext">Index: 53
 Patent: US9084625
 Status: Active
@@ -2032,7 +2036,7 @@ Adjusted Expiration Date: 2029-04-12</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">54: Patent Number: US8663262 | Status: Active | Title: Battery assembly for battery-powered surgical instruments | Adjusted Expiration Date: 2029-03-30
+        <span class="tooltip">54: Patent Number: <a href="https://patents.google.com/patent/US8663262/en" target="_blank" rel="noopener noreferrer">US8663262</a> | Status: Active | Title: Battery assembly for battery-powered surgical instruments | Adjusted Expiration Date: 2029-03-30
           <span class="tooltiptext">Index: 54
 Patent: US8663262
 Status: Active
@@ -2077,7 +2081,7 @@ Adjusted Expiration Date: 2029-03-30</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">55: Patent Number: WO2011025857 | Status: Status not found | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">55: Patent Number: <a href="https://patents.google.com/patent/WO2011025857/en" target="_blank" rel="noopener noreferrer">WO2011025857</a> | Status: Status not found | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 55
 Patent: WO2011025857
 Status: Status not found
@@ -2098,7 +2102,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">56: Patent Number: US20090143802 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-30
+        <span class="tooltip">56: Patent Number: <a href="https://patents.google.com/patent/US20090143802/en" target="_blank" rel="noopener noreferrer">US20090143802</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-30
           <span class="tooltiptext">Index: 56
 Patent: US20090143802
 Status: Active
@@ -2147,7 +2151,7 @@ Adjusted Expiration Date: 2030-06-30</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">57: Patent Number: CA2945596 | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">57: Patent Number: <a href="https://patents.google.com/patent/CA2945596/en" target="_blank" rel="noopener noreferrer">CA2945596</a> | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 57
 Patent: CA2945596
 Status: Expired - Fee Related
@@ -2185,7 +2189,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">58: Patent Number: US9314261 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">58: Patent Number: <a href="https://patents.google.com/patent/US9314261/en" target="_blank" rel="noopener noreferrer">US9314261</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 58
 Patent: US9314261
 Status: Active
@@ -2229,7 +2233,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">59: Patent Number: US8403949 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-09-04
+        <span class="tooltip">59: Patent Number: <a href="https://patents.google.com/patent/US8403949/en" target="_blank" rel="noopener noreferrer">US8403949</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-09-04
           <span class="tooltiptext">Index: 59
 Patent: US8403949
 Status: Active
@@ -2270,7 +2274,7 @@ Adjusted Expiration Date: 2030-09-04</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">60: Patent Number: US20110167619 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">60: Patent Number: <a href="https://patents.google.com/patent/US20110167619/en" target="_blank" rel="noopener noreferrer">US20110167619</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 60
 Patent: US20110167619
 Status: Active
@@ -2313,7 +2317,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">61: Patent Number: CA2968143 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">61: Patent Number: <a href="https://patents.google.com/patent/CA2968143/en" target="_blank" rel="noopener noreferrer">CA2968143</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 61
 Patent: CA2968143
 Status: Active
@@ -2346,7 +2350,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">62: Patent Number: JP2014221186 | Status: Active | Title: Cordless hand-held ultrasonic ablation cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">62: Patent Number: <a href="https://patents.google.com/patent/JP2014221186/en" target="_blank" rel="noopener noreferrer">JP2014221186</a> | Status: Active | Title: Cordless hand-held ultrasonic ablation cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 62
 Patent: JP2014221186
 Status: Active
@@ -2367,7 +2371,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">63: Patent Number: US8497436 | Status: Expired - Fee Related | Title: Two-stage switch for surgical device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">63: Patent Number: <a href="https://patents.google.com/patent/US8497436/en" target="_blank" rel="noopener noreferrer">US8497436</a> | Status: Expired - Fee Related | Title: Two-stage switch for surgical device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 63
 Patent: US8497436
 Status: Expired - Fee Related
@@ -2415,7 +2419,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">64: Patent Number: CA2921116 | Status: Abandoned | Title: Cordless hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">64: Patent Number: <a href="https://patents.google.com/patent/CA2921116/en" target="_blank" rel="noopener noreferrer">CA2921116</a> | Status: Abandoned | Title: Cordless hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 64
 Patent: CA2921116
 Status: Abandoned
@@ -2453,7 +2457,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">65: Patent Number: US20160228914 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2032-01-13
+        <span class="tooltip">65: Patent Number: <a href="https://patents.google.com/patent/US20160228914/en" target="_blank" rel="noopener noreferrer">US20160228914</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2032-01-13
           <span class="tooltiptext">Index: 65
 Patent: US20160228914
 Status: Active
@@ -2490,7 +2494,7 @@ Adjusted Expiration Date: 2032-01-13</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">66: Patent Number: US20100004669 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device and Method | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">66: Patent Number: <a href="https://patents.google.com/patent/US20100004669/en" target="_blank" rel="noopener noreferrer">US20100004669</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device and Method | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 66
 Patent: US20100004669
 Status: Active
@@ -2534,7 +2538,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">67: Patent Number: CA2790917 | Status: Expired - Fee Related | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2030-08-26
+        <span class="tooltip">67: Patent Number: <a href="https://patents.google.com/patent/CA2790917/en" target="_blank" rel="noopener noreferrer">CA2790917</a> | Status: Expired - Fee Related | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2030-08-26
           <span class="tooltiptext">Index: 67
 Patent: CA2790917
 Status: Expired - Fee Related
@@ -2638,7 +2642,7 @@ Anticipated Expiration Date: 2030-08-26</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">68: Patent Number: JP2018161524 | Status: Expired - Fee Related | Title: Battery driven hand-held ultrasonic surgery cauterizing device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">68: Patent Number: <a href="https://patents.google.com/patent/JP2018161524/en" target="_blank" rel="noopener noreferrer">JP2018161524</a> | Status: Expired - Fee Related | Title: Battery driven hand-held ultrasonic surgery cauterizing device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 68
 Patent: JP2018161524
 Status: Expired - Fee Related
@@ -2659,7 +2663,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">69: Patent Number: US8333778 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">69: Patent Number: <a href="https://patents.google.com/patent/US8333778/en" target="_blank" rel="noopener noreferrer">US8333778</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 69
 Patent: US8333778
 Status: Active
@@ -2703,7 +2707,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">70: Patent Number: JP5896427 | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">70: Patent Number: <a href="https://patents.google.com/patent/JP5896427/en" target="_blank" rel="noopener noreferrer">JP5896427</a> | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 70
 Patent: JP5896427
 Status: Expired - Fee Related
@@ -2724,7 +2728,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">71: Patent Number: US20130239402 | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-06-08
+        <span class="tooltip">71: Patent Number: <a href="https://patents.google.com/patent/US20130239402/en" target="_blank" rel="noopener noreferrer">US20130239402</a> | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-06-08
           <span class="tooltiptext">Index: 71
 Patent: US20130239402
 Status: Active
@@ -2765,7 +2769,7 @@ Adjusted Expiration Date: 2029-06-08</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">72: Patent Number: US20120078278 | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Adjusted Expiration Date: 2029-05-05
+        <span class="tooltip">72: Patent Number: <a href="https://patents.google.com/patent/US20120078278/en" target="_blank" rel="noopener noreferrer">US20120078278</a> | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Adjusted Expiration Date: 2029-05-05
           <span class="tooltiptext">Index: 72
 Patent: US20120078278
 Status: Active
@@ -2807,7 +2811,7 @@ Adjusted Expiration Date: 2029-05-05</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">73: Patent Number: US20110257650 | Status: Active | Title: Battery Assembly for Battery-Powered Surgical Instruments | Adjusted Expiration Date: 2029-03-30
+        <span class="tooltip">73: Patent Number: <a href="https://patents.google.com/patent/US20110257650/en" target="_blank" rel="noopener noreferrer">US20110257650</a> | Status: Active | Title: Battery Assembly for Battery-Powered Surgical Instruments | Adjusted Expiration Date: 2029-03-30
           <span class="tooltiptext">Index: 73
 Patent: US20110257650
 Status: Active
@@ -2853,7 +2857,7 @@ Adjusted Expiration Date: 2029-03-30</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">74: Patent Number: US20110009890 | Status: Expired - Fee Related | Title: Method of Switching a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-14
+        <span class="tooltip">74: Patent Number: <a href="https://patents.google.com/patent/US20110009890/en" target="_blank" rel="noopener noreferrer">US20110009890</a> | Status: Expired - Fee Related | Title: Method of Switching a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-14
           <span class="tooltiptext">Index: 74
 Patent: US20110009890
 Status: Expired - Fee Related
@@ -2893,7 +2897,7 @@ Adjusted Expiration Date: 2029-12-14</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">75: Patent Number: US8197502 | Status: Active | Title: Method of maintaining constant movement of a cutting blade on an ultrasonic waveguide | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">75: Patent Number: <a href="https://patents.google.com/patent/US8197502/en" target="_blank" rel="noopener noreferrer">US8197502</a> | Status: Active | Title: Method of maintaining constant movement of a cutting blade on an ultrasonic waveguide | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 75
 Patent: US8197502
 Status: Active
@@ -2932,7 +2936,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">76: Patent Number: EP2433577 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">76: Patent Number: <a href="https://patents.google.com/patent/EP2433577/en" target="_blank" rel="noopener noreferrer">EP2433577</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 76
 Patent: EP2433577
 Status: Active
@@ -2953,7 +2957,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">77: Patent Number: US8487199 | Status: Expired - Fee Related | Title: Method of switching a surgical device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">77: Patent Number: <a href="https://patents.google.com/patent/US8487199/en" target="_blank" rel="noopener noreferrer">US8487199</a> | Status: Expired - Fee Related | Title: Method of switching a surgical device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 77
 Patent: US8487199
 Status: Expired - Fee Related
@@ -2993,7 +2997,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">78: Patent Number: US20110054506 | Status: Expired - Fee Related | Title: Two-Stage Switch for Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-17
+        <span class="tooltip">78: Patent Number: <a href="https://patents.google.com/patent/US20110054506/en" target="_blank" rel="noopener noreferrer">US20110054506</a> | Status: Expired - Fee Related | Title: Two-Stage Switch for Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-12-17
           <span class="tooltiptext">Index: 78
 Patent: US20110054506
 Status: Expired - Fee Related
@@ -3041,7 +3045,7 @@ Adjusted Expiration Date: 2029-12-17</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">79: Patent Number: US8439939 | Status: Active | Title: Method of powering a surgical instrument | Adjusted Expiration Date: 2029-06-08
+        <span class="tooltip">79: Patent Number: <a href="https://patents.google.com/patent/US8439939/en" target="_blank" rel="noopener noreferrer">US8439939</a> | Status: Active | Title: Method of powering a surgical instrument | Adjusted Expiration Date: 2029-06-08
           <span class="tooltiptext">Index: 79
 Patent: US8439939
 Status: Active
@@ -3086,7 +3090,7 @@ Adjusted Expiration Date: 2029-06-08</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">80: Patent Number: US20090143805 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-09-12
+        <span class="tooltip">80: Patent Number: <a href="https://patents.google.com/patent/US20090143805/en" target="_blank" rel="noopener noreferrer">US20090143805</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-09-12
           <span class="tooltiptext">Index: 80
 Patent: US20090143805
 Status: Active
@@ -3126,7 +3130,7 @@ Adjusted Expiration Date: 2029-09-12</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">81: Patent Number: JP2014204983 | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">81: Patent Number: <a href="https://patents.google.com/patent/JP2014204983/en" target="_blank" rel="noopener noreferrer">JP2014204983</a> | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 81
 Patent: JP2014204983
 Status: Expired - Fee Related
@@ -3147,7 +3151,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">82: Patent Number: US20090143803 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-28
+        <span class="tooltip">82: Patent Number: <a href="https://patents.google.com/patent/US20090143803/en" target="_blank" rel="noopener noreferrer">US20090143803</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-06-28
           <span class="tooltiptext">Index: 82
 Patent: US20090143803
 Status: Active
@@ -3189,7 +3193,7 @@ Adjusted Expiration Date: 2030-06-28</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">83: Patent Number: EP2471080 | Status: Withdrawn | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">83: Patent Number: <a href="https://patents.google.com/patent/EP2471080/en" target="_blank" rel="noopener noreferrer">EP2471080</a> | Status: Withdrawn | Title: Two -stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 83
 Patent: EP2471080
 Status: Withdrawn
@@ -3210,7 +3214,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">84: Patent Number: AU2011213852 | Status: Ceased | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-24
+        <span class="tooltip">84: Patent Number: <a href="https://patents.google.com/patent/AU2011213852/en" target="_blank" rel="noopener noreferrer">AU2011213852</a> | Status: Ceased | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-24
           <span class="tooltiptext">Index: 84
 Patent: AU2011213852
 Status: Ceased
@@ -3249,7 +3253,7 @@ Anticipated Expiration Date: 2031-08-24</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">85: Patent Number: US20110184445 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">85: Patent Number: <a href="https://patents.google.com/patent/US20110184445/en" target="_blank" rel="noopener noreferrer">US20110184445</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 85
 Patent: US20110184445
 Status: Active
@@ -3300,7 +3304,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">86: Patent Number: US20120277780 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">86: Patent Number: <a href="https://patents.google.com/patent/US20120277780/en" target="_blank" rel="noopener noreferrer">US20120277780</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 86
 Patent: US20120277780
 Status: Active
@@ -3343,7 +3347,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">87: Patent Number: US20090143800 | Status: Abandoned | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Expiration date not found
+        <span class="tooltip">87: Patent Number: <a href="https://patents.google.com/patent/US20090143800/en" target="_blank" rel="noopener noreferrer">US20090143800</a> | Status: Abandoned | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Expiration date not found
           <span class="tooltiptext">Index: 87
 Patent: US20090143800
 Status: Abandoned
@@ -3377,7 +3381,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">88: Patent Number: EP2510891 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-15
+        <span class="tooltip">88: Patent Number: <a href="https://patents.google.com/patent/EP2510891/en" target="_blank" rel="noopener noreferrer">EP2510891</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-15
           <span class="tooltiptext">Index: 88
 Patent: EP2510891
 Status: Active
@@ -3398,7 +3402,7 @@ Anticipated Expiration Date: 2032-04-15</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">89: Patent Number: JP2014204982 | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">89: Patent Number: <a href="https://patents.google.com/patent/JP2014204982/en" target="_blank" rel="noopener noreferrer">JP2014204982</a> | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 89
 Patent: JP2014204982
 Status: Expired - Fee Related
@@ -3419,7 +3423,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">90: Patent Number: USD0700699 | Status: Status not found | Title: Title not found | Expiration date not found
+        <span class="tooltip">90: Patent Number: <a href="https://patents.google.com/patent/USD0700699/en" target="_blank" rel="noopener noreferrer">USD0700699</a> | Status: Status not found | Title: Title not found | Expiration date not found
           <span class="tooltiptext">Index: 90
 Patent: USD0700699
 Status: Status not found
@@ -3440,7 +3444,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">91: Patent Number: EP2229104 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">91: Patent Number: <a href="https://patents.google.com/patent/EP2229104/en" target="_blank" rel="noopener noreferrer">EP2229104</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 91
 Patent: EP2229104
 Status: Active
@@ -3461,7 +3465,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">92: Patent Number: US20110190800 | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade of an Ultrasonic Waveguide | Adjusted Expiration Date: 2028-11-23
+        <span class="tooltip">92: Patent Number: <a href="https://patents.google.com/patent/US20110190800/en" target="_blank" rel="noopener noreferrer">US20110190800</a> | Status: Active | Title: Method of Maintaining Constant Movement of a Cutting Blade of an Ultrasonic Waveguide | Adjusted Expiration Date: 2028-11-23
           <span class="tooltiptext">Index: 92
 Patent: US20110190800
 Status: Active
@@ -3514,7 +3518,7 @@ Adjusted Expiration Date: 2028-11-23</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">93: Patent Number: CA3022252 | Status: Expired - Fee Related | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
+        <span class="tooltip">93: Patent Number: <a href="https://patents.google.com/patent/CA3022252/en" target="_blank" rel="noopener noreferrer">CA3022252</a> | Status: Expired - Fee Related | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-13
           <span class="tooltiptext">Index: 93
 Patent: CA3022252
 Status: Expired - Fee Related
@@ -3551,7 +3555,7 @@ Anticipated Expiration Date: 2032-04-13</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">94: Patent Number: US8333779 | Status: Active | Title: Method of maintaining constant movement of a cutting blade of an ultrasonic waveguide | Adjusted Expiration Date: 2028-11-23
+        <span class="tooltip">94: Patent Number: <a href="https://patents.google.com/patent/US8333779/en" target="_blank" rel="noopener noreferrer">US8333779</a> | Status: Active | Title: Method of maintaining constant movement of a cutting blade of an ultrasonic waveguide | Adjusted Expiration Date: 2028-11-23
           <span class="tooltiptext">Index: 94
 Patent: US8333779
 Status: Active
@@ -3597,7 +3601,7 @@ Adjusted Expiration Date: 2028-11-23</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">95: Patent Number: US20170325836 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">95: Patent Number: <a href="https://patents.google.com/patent/US20170325836/en" target="_blank" rel="noopener noreferrer">US20170325836</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 95
 Patent: US20170325836
 Status: Active
@@ -3640,7 +3644,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">96: Patent Number: US20120071796 | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Adjusted Expiration Date: 2029-01-14
+        <span class="tooltip">96: Patent Number: <a href="https://patents.google.com/patent/US20120071796/en" target="_blank" rel="noopener noreferrer">US20120071796</a> | Status: Active | Title: Battery-Powered Hand-Held Ultrasonic Surgical Cautery Cutting Device | Adjusted Expiration Date: 2029-01-14
           <span class="tooltiptext">Index: 96
 Patent: US20120071796
 Status: Active
@@ -3680,7 +3684,7 @@ Adjusted Expiration Date: 2029-01-14</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">97: Patent Number: US8435257 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device and method | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">97: Patent Number: <a href="https://patents.google.com/patent/US8435257/en" target="_blank" rel="noopener noreferrer">US8435257</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device and method | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 97
 Patent: US8435257
 Status: Active
@@ -3726,7 +3730,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">98: Patent Number: US20110167621 | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">98: Patent Number: <a href="https://patents.google.com/patent/US20110167621/en" target="_blank" rel="noopener noreferrer">US20110167621</a> | Status: Active | Title: Method of Assembling a Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 98
 Patent: US20110167621
 Status: Active
@@ -3766,7 +3770,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">99: Patent Number: EP2313814 | Status: Active | Title: A method, device, and computer program product for event detection while preventing misclassification | Anticipated Expiration Date: 2029-07-16
+        <span class="tooltip">99: Patent Number: <a href="https://patents.google.com/patent/EP2313814/en" target="_blank" rel="noopener noreferrer">EP2313814</a> | Status: Active | Title: A method, device, and computer program product for event detection while preventing misclassification | Anticipated Expiration Date: 2029-07-16
           <span class="tooltiptext">Index: 99
 Patent: EP2313814
 Status: Active
@@ -3787,7 +3791,7 @@ Anticipated Expiration Date: 2029-07-16</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">100: Patent Number: US20150141988 | Status: Abandoned | Title: Two-Stage Switch for Surgical Device | Expiration date not found
+        <span class="tooltip">100: Patent Number: <a href="https://patents.google.com/patent/US20150141988/en" target="_blank" rel="noopener noreferrer">US20150141988</a> | Status: Abandoned | Title: Two-Stage Switch for Surgical Device | Expiration date not found
           <span class="tooltiptext">Index: 100
 Patent: US20150141988
 Status: Abandoned
@@ -3831,7 +3835,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">101: Patent Number: JP2012223582 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">101: Patent Number: <a href="https://patents.google.com/patent/JP2012223582/en" target="_blank" rel="noopener noreferrer">JP2012223582</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 101
 Patent: JP2012223582
 Status: Active
@@ -3852,7 +3856,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">102: Patent Number: US10426508 | Status: Active | Title: Cordless hand-held ultrasonic cautery device | Adjusted Expiration Date: 2029-07-26
+        <span class="tooltip">102: Patent Number: <a href="https://patents.google.com/patent/US10426508/en" target="_blank" rel="noopener noreferrer">US10426508</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery device | Adjusted Expiration Date: 2029-07-26
           <span class="tooltiptext">Index: 102
 Patent: US10426508
 Status: Active
@@ -3893,7 +3897,7 @@ Adjusted Expiration Date: 2029-07-26</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">103: Patent Number: WO2010007138 | Status: Status not found | Title: A method, device, and computer program product for event detection while preventing misclassification | Expiration date not found
+        <span class="tooltip">103: Patent Number: <a href="https://patents.google.com/patent/WO2010007138/en" target="_blank" rel="noopener noreferrer">WO2010007138</a> | Status: Status not found | Title: A method, device, and computer program product for event detection while preventing misclassification | Expiration date not found
           <span class="tooltiptext">Index: 103
 Patent: WO2010007138
 Status: Status not found
@@ -3914,7 +3918,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">104: Patent Number: US8502091 | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">104: Patent Number: <a href="https://patents.google.com/patent/US8502091/en" target="_blank" rel="noopener noreferrer">US8502091</a> | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 104
 Patent: US8502091
 Status: Expired - Fee Related
@@ -3957,7 +3961,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">105: Patent Number: US20130046321 | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">105: Patent Number: <a href="https://patents.google.com/patent/US20130046321/en" target="_blank" rel="noopener noreferrer">US20130046321</a> | Status: Expired - Fee Related | Title: Two-Stage Switch for Surgical Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 105
 Patent: US20130046321
 Status: Expired - Fee Related
@@ -4005,7 +4009,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">106: Patent Number: JP6126173 | Status: Expired - Fee Related | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">106: Patent Number: <a href="https://patents.google.com/patent/JP6126173/en" target="_blank" rel="noopener noreferrer">JP6126173</a> | Status: Expired - Fee Related | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 106
 Patent: JP6126173
 Status: Expired - Fee Related
@@ -4026,7 +4030,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">107: Patent Number: JP5900917 | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">107: Patent Number: <a href="https://patents.google.com/patent/JP5900917/en" target="_blank" rel="noopener noreferrer">JP5900917</a> | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 107
 Patent: JP5900917
 Status: Active
@@ -4047,7 +4051,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker misc"></span>
       <div>
-        <span class="tooltip">108: Patent Number: JP2013126430 | Status: Pending | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Expiration date not found
+        <span class="tooltip">108: Patent Number: <a href="https://patents.google.com/patent/JP2013126430/en" target="_blank" rel="noopener noreferrer">JP2013126430</a> | Status: Pending | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 108
 Patent: JP2013126430
 Status: Pending
@@ -4068,7 +4072,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker misc"></span>
       <div>
-        <span class="tooltip">109: Patent Number: JP2016041314 | Status: Pending | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">109: Patent Number: <a href="https://patents.google.com/patent/JP2016041314/en" target="_blank" rel="noopener noreferrer">JP2016041314</a> | Status: Pending | Title: Two-stage switch for cordless hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 109
 Patent: JP2016041314
 Status: Pending
@@ -4089,7 +4093,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">110: Patent Number: JP5896428 | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">110: Patent Number: <a href="https://patents.google.com/patent/JP5896428/en" target="_blank" rel="noopener noreferrer">JP5896428</a> | Status: Expired - Fee Related | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 110
 Patent: JP5896428
 Status: Expired - Fee Related
@@ -4110,7 +4114,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">111: Patent Number: JP2017148538 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">111: Patent Number: <a href="https://patents.google.com/patent/JP2017148538/en" target="_blank" rel="noopener noreferrer">JP2017148538</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 111
 Patent: JP2017148538
 Status: Active
@@ -4131,7 +4135,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">112: Patent Number: US9861382 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">112: Patent Number: <a href="https://patents.google.com/patent/US9861382/en" target="_blank" rel="noopener noreferrer">US9861382</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 112
 Patent: US9861382
 Status: Active
@@ -4165,7 +4169,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">113: Patent Number: US20130245657 | Status: Active | Title: Battery Assembly for Battery-Powered Surgical Instruments | Adjusted Expiration Date: 2029-04-12
+        <span class="tooltip">113: Patent Number: <a href="https://patents.google.com/patent/US20130245657/en" target="_blank" rel="noopener noreferrer">US20130245657</a> | Status: Active | Title: Battery Assembly for Battery-Powered Surgical Instruments | Adjusted Expiration Date: 2029-04-12
           <span class="tooltiptext">Index: 113
 Patent: US20130245657
 Status: Active
@@ -4210,7 +4214,7 @@ Adjusted Expiration Date: 2029-04-12</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">114: Patent Number: JP6081561 | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">114: Patent Number: <a href="https://patents.google.com/patent/JP6081561/en" target="_blank" rel="noopener noreferrer">JP6081561</a> | Status: Active | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 114
 Patent: JP6081561
 Status: Active
@@ -4231,7 +4235,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">115: Patent Number: US20110167620 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">115: Patent Number: <a href="https://patents.google.com/patent/US20110167620/en" target="_blank" rel="noopener noreferrer">US20110167620</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 115
 Patent: US20110167620
 Status: Active
@@ -4277,7 +4281,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">116: Patent Number: JP2017099917 | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">116: Patent Number: <a href="https://patents.google.com/patent/JP2017099917/en" target="_blank" rel="noopener noreferrer">JP2017099917</a> | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 116
 Patent: JP2017099917
 Status: Expired - Fee Related
@@ -4298,7 +4302,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">117: Patent Number: CA2707837 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">117: Patent Number: <a href="https://patents.google.com/patent/CA2707837/en" target="_blank" rel="noopener noreferrer">CA2707837</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 117
 Patent: CA2707837
 Status: Active
@@ -4338,7 +4342,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">118: Patent Number: JP5896426 | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">118: Patent Number: <a href="https://patents.google.com/patent/JP5896426/en" target="_blank" rel="noopener noreferrer">JP5896426</a> | Status: Active | Title: Cordless, hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 118
 Patent: JP5896426
 Status: Active
@@ -4359,7 +4363,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">119: Patent Number: US20090143801 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-11-06
+        <span class="tooltip">119: Patent Number: <a href="https://patents.google.com/patent/US20090143801/en" target="_blank" rel="noopener noreferrer">US20090143801</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2029-11-06
           <span class="tooltiptext">Index: 119
 Patent: US20090143801
 Status: Active
@@ -4399,7 +4403,7 @@ Adjusted Expiration Date: 2029-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">120: Patent Number: US8403948 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-11-06
+        <span class="tooltip">120: Patent Number: <a href="https://patents.google.com/patent/US8403948/en" target="_blank" rel="noopener noreferrer">US8403948</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-11-06
           <span class="tooltiptext">Index: 120
 Patent: US8403948
 Status: Active
@@ -4438,7 +4442,7 @@ Adjusted Expiration Date: 2029-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">121: Patent Number: US20170119427 | Status: Active | Title: Cordless hand-held ultrasonic cautery device | Adjusted Expiration Date: 2029-07-26
+        <span class="tooltip">121: Patent Number: <a href="https://patents.google.com/patent/US20170119427/en" target="_blank" rel="noopener noreferrer">US20170119427</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery device | Adjusted Expiration Date: 2029-07-26
           <span class="tooltiptext">Index: 121
 Patent: US20170119427
 Status: Active
@@ -4480,7 +4484,7 @@ Adjusted Expiration Date: 2029-07-26</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">122: Patent Number: US8418349 | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">122: Patent Number: <a href="https://patents.google.com/patent/US8418349/en" target="_blank" rel="noopener noreferrer">US8418349</a> | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 122
 Patent: US8418349
 Status: Active
@@ -4522,7 +4526,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">123: Patent Number: US8372099 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-30
+        <span class="tooltip">123: Patent Number: <a href="https://patents.google.com/patent/US8372099/en" target="_blank" rel="noopener noreferrer">US8372099</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-30
           <span class="tooltiptext">Index: 123
 Patent: US8372099
 Status: Active
@@ -4573,7 +4577,7 @@ Adjusted Expiration Date: 2030-06-30</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">124: Patent Number: JP2016104161 | Status: Active | Title: Battery-driven handheld ultrasonic surgical cauterizing and cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">124: Patent Number: <a href="https://patents.google.com/patent/JP2016104161/en" target="_blank" rel="noopener noreferrer">JP2016104161</a> | Status: Active | Title: Battery-driven handheld ultrasonic surgical cauterizing and cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 124
 Patent: JP2016104161
 Status: Active
@@ -4594,7 +4598,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">125: Patent Number: US10799913 | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2032-01-13
+        <span class="tooltip">125: Patent Number: <a href="https://patents.google.com/patent/US10799913/en" target="_blank" rel="noopener noreferrer">US10799913</a> | Status: Active | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Adjusted Expiration Date: 2032-01-13
           <span class="tooltiptext">Index: 125
 Patent: US10799913
 Status: Active
@@ -4631,7 +4635,7 @@ Adjusted Expiration Date: 2032-01-13</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">126: Patent Number: EP3398540 | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
+        <span class="tooltip">126: Patent Number: <a href="https://patents.google.com/patent/EP3398540/en" target="_blank" rel="noopener noreferrer">EP3398540</a> | Status: Active | Title: Battery powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2031-08-25
           <span class="tooltiptext">Index: 126
 Patent: EP3398540
 Status: Active
@@ -4652,7 +4656,7 @@ Anticipated Expiration Date: 2031-08-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">127: Patent Number: US10456158 | Status: Active | Title: Cordless hand-held ultrasonic surgical device | Adjusted Expiration Date: 2029-07-08
+        <span class="tooltip">127: Patent Number: <a href="https://patents.google.com/patent/US10456158/en" target="_blank" rel="noopener noreferrer">US10456158</a> | Status: Active | Title: Cordless hand-held ultrasonic surgical device | Adjusted Expiration Date: 2029-07-08
           <span class="tooltiptext">Index: 127
 Patent: US10456158
 Status: Active
@@ -4695,7 +4699,7 @@ Adjusted Expiration Date: 2029-07-08</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">128: Patent Number: WO2009073608 | Status: Status not found | Title: Cordless hand-held ultrasonic cautery cutting device | Expiration date not found
+        <span class="tooltip">128: Patent Number: <a href="https://patents.google.com/patent/WO2009073608/en" target="_blank" rel="noopener noreferrer">WO2009073608</a> | Status: Status not found | Title: Cordless hand-held ultrasonic cautery cutting device | Expiration date not found
           <span class="tooltiptext">Index: 128
 Patent: WO2009073608
 Status: Status not found
@@ -4716,7 +4720,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker not-found"></span>
       <div>
-        <span class="tooltip">129: Patent Number: USD0700967 | Status: Status not found | Title: Title not found | Expiration date not found
+        <span class="tooltip">129: Patent Number: <a href="https://patents.google.com/patent/USD0700967/en" target="_blank" rel="noopener noreferrer">USD0700967</a> | Status: Status not found | Title: Title not found | Expiration date not found
           <span class="tooltiptext">Index: 129
 Patent: USD0700967
 Status: Status not found
@@ -4737,7 +4741,7 @@ Expiration date not found</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">130: Patent Number: US20090143804 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-09-04
+        <span class="tooltip">130: Patent Number: <a href="https://patents.google.com/patent/US20090143804/en" target="_blank" rel="noopener noreferrer">US20090143804</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Adjusted Expiration Date: 2030-09-04
           <span class="tooltiptext">Index: 130
 Patent: US20090143804
 Status: Active
@@ -4779,7 +4783,7 @@ Adjusted Expiration Date: 2030-09-04</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">131: Patent Number: US8334468 | Status: Expired - Fee Related | Title: Method of switching a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-14
+        <span class="tooltip">131: Patent Number: <a href="https://patents.google.com/patent/US8334468/en" target="_blank" rel="noopener noreferrer">US8334468</a> | Status: Expired - Fee Related | Title: Method of switching a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-12-14
           <span class="tooltiptext">Index: 131
 Patent: US8334468
 Status: Expired - Fee Related
@@ -4819,7 +4823,7 @@ Adjusted Expiration Date: 2029-12-14</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">132: Patent Number: JP2012096045 | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
+        <span class="tooltip">132: Patent Number: <a href="https://patents.google.com/patent/JP2012096045/en" target="_blank" rel="noopener noreferrer">JP2012096045</a> | Status: Expired - Fee Related | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-12-01
           <span class="tooltiptext">Index: 132
 Patent: JP2012096045
 Status: Expired - Fee Related
@@ -4840,7 +4844,7 @@ Anticipated Expiration Date: 2028-12-01</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">133: Patent Number: JP6364098 | Status: Expired - Fee Related | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">133: Patent Number: <a href="https://patents.google.com/patent/JP6364098/en" target="_blank" rel="noopener noreferrer">JP6364098</a> | Status: Expired - Fee Related | Title: Battery operated handheld ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 133
 Patent: JP6364098
 Status: Expired - Fee Related
@@ -4861,7 +4865,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">134: Patent Number: JP6655666 | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
+        <span class="tooltip">134: Patent Number: <a href="https://patents.google.com/patent/JP6655666/en" target="_blank" rel="noopener noreferrer">JP6655666</a> | Status: Expired - Fee Related | Title: Battery-powered hand-held ultrasonic surgical cautery cutting device | Anticipated Expiration Date: 2032-04-16
           <span class="tooltiptext">Index: 134
 Patent: JP6655666
 Status: Expired - Fee Related
@@ -4882,7 +4886,7 @@ Anticipated Expiration Date: 2032-04-16</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">135: Patent Number: US8742269 | Status: Expired - Fee Related | Title: Two-stage switch for surgical device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">135: Patent Number: <a href="https://patents.google.com/patent/US8742269/en" target="_blank" rel="noopener noreferrer">US8742269</a> | Status: Expired - Fee Related | Title: Two-stage switch for surgical device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 135
 Patent: US8742269
 Status: Expired - Fee Related
@@ -4926,7 +4930,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">136: Patent Number: US8377085 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">136: Patent Number: <a href="https://patents.google.com/patent/US8377085/en" target="_blank" rel="noopener noreferrer">US8377085</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 136
 Patent: US8377085
 Status: Active
@@ -4974,7 +4978,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">137: Patent Number: US8419758 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-10
+        <span class="tooltip">137: Patent Number: <a href="https://patents.google.com/patent/US8419758/en" target="_blank" rel="noopener noreferrer">US8419758</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2030-06-10
           <span class="tooltiptext">Index: 137
 Patent: US8419758
 Status: Active
@@ -5007,7 +5011,7 @@ Adjusted Expiration Date: 2030-06-10</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">138: Patent Number: US20110178542 | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">138: Patent Number: <a href="https://patents.google.com/patent/US20110178542/en" target="_blank" rel="noopener noreferrer">US20110178542</a> | Status: Active | Title: Cordless Hand-Held Ultrasonic Cautery Cutting Device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 138
 Patent: US20110178542
 Status: Active
@@ -5056,7 +5060,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">139: Patent Number: US8992555 | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-06-08
+        <span class="tooltip">139: Patent Number: <a href="https://patents.google.com/patent/US8992555/en" target="_blank" rel="noopener noreferrer">US8992555</a> | Status: Active | Title: Method of assembling a cordless hand-held ultrasonic cautery cutting device | Adjusted Expiration Date: 2029-06-08
           <span class="tooltiptext">Index: 139
 Patent: US8992555
 Status: Active
@@ -5097,7 +5101,7 @@ Adjusted Expiration Date: 2029-06-08</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">140: Patent Number: US8497437 | Status: Expired - Fee Related | Title: Method of switching a surgical device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">140: Patent Number: <a href="https://patents.google.com/patent/US8497437/en" target="_blank" rel="noopener noreferrer">US8497437</a> | Status: Expired - Fee Related | Title: Method of switching a surgical device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 140
 Patent: US8497437
 Status: Expired - Fee Related
@@ -5137,7 +5141,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">141: Patent Number: US8236020 | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
+        <span class="tooltip">141: Patent Number: <a href="https://patents.google.com/patent/US8236020/en" target="_blank" rel="noopener noreferrer">US8236020</a> | Status: Active | Title: Cordless hand-held ultrasonic cautery cutting device | Anticipated Expiration Date: 2028-11-06
           <span class="tooltiptext">Index: 141
 Patent: US8236020
 Status: Active
@@ -5176,7 +5180,7 @@ Anticipated Expiration Date: 2028-11-06</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">142: Patent Number: US9161769 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2033-12-07
+        <span class="tooltip">142: Patent Number: <a href="https://patents.google.com/patent/US9161769/en" target="_blank" rel="noopener noreferrer">US9161769</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2033-12-07
           <span class="tooltiptext">Index: 142
 Patent: US9161769
 Status: Active
@@ -5207,7 +5211,7 @@ Adjusted Expiration Date: 2033-12-07</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">143: Patent Number: US11730504 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2034-08-18
+        <span class="tooltip">143: Patent Number: <a href="https://patents.google.com/patent/US11730504/en" target="_blank" rel="noopener noreferrer">US11730504</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2034-08-18
           <span class="tooltiptext">Index: 143
 Patent: US11730504
 Status: Active
@@ -5238,7 +5242,7 @@ Adjusted Expiration Date: 2034-08-18</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">144: Patent Number: US20200253627 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2034-08-18
+        <span class="tooltip">144: Patent Number: <a href="https://patents.google.com/patent/US20200253627/en" target="_blank" rel="noopener noreferrer">US20200253627</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2034-08-18
           <span class="tooltiptext">Index: 144
 Patent: US20200253627
 Status: Active
@@ -5277,7 +5281,7 @@ Adjusted Expiration Date: 2034-08-18</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">145: Patent Number: US12239337 | Status: Active | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-03-15
+        <span class="tooltip">145: Patent Number: <a href="https://patents.google.com/patent/US12239337/en" target="_blank" rel="noopener noreferrer">US12239337</a> | Status: Active | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-03-15
           <span class="tooltiptext">Index: 145
 Patent: US12239337
 Status: Active
@@ -5314,7 +5318,7 @@ Anticipated Expiration Date: 2033-03-15</span>
     <li class="entry"> 
       <span class="marker misc"></span>
       <div>
-        <span class="tooltip">146: Patent Number: EP2692297 | Status: Not-in-force | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-30
+        <span class="tooltip">146: Patent Number: <a href="https://patents.google.com/patent/EP2692297/en" target="_blank" rel="noopener noreferrer">EP2692297</a> | Status: Not-in-force | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-30
           <span class="tooltiptext">Index: 146
 Patent: EP2692297
 Status: Not-in-force
@@ -5335,7 +5339,7 @@ Anticipated Expiration Date: 2033-07-30</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">147: Patent Number: US10639053 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2035-01-11
+        <span class="tooltip">147: Patent Number: <a href="https://patents.google.com/patent/US10639053/en" target="_blank" rel="noopener noreferrer">US10639053</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2035-01-11
           <span class="tooltiptext">Index: 147
 Patent: US10639053
 Status: Active
@@ -5366,7 +5370,7 @@ Adjusted Expiration Date: 2035-01-11</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">148: Patent Number: US20140031860 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2033-12-07
+        <span class="tooltip">148: Patent Number: <a href="https://patents.google.com/patent/US20140031860/en" target="_blank" rel="noopener noreferrer">US20140031860</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2033-12-07
           <span class="tooltiptext">Index: 148
 Patent: US20140031860
 Status: Active
@@ -5410,7 +5414,7 @@ Adjusted Expiration Date: 2033-12-07</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">149: Patent Number: CA2821471 | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-19
+        <span class="tooltip">149: Patent Number: <a href="https://patents.google.com/patent/CA2821471/en" target="_blank" rel="noopener noreferrer">CA2821471</a> | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-19
           <span class="tooltiptext">Index: 149
 Patent: CA2821471
 Status: Expired - Fee Related
@@ -5446,7 +5450,7 @@ Anticipated Expiration Date: 2033-07-19</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">150: Patent Number: AU2013207564 | Status: Ceased | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-16
+        <span class="tooltip">150: Patent Number: <a href="https://patents.google.com/patent/AU2013207564/en" target="_blank" rel="noopener noreferrer">AU2013207564</a> | Status: Ceased | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-16
           <span class="tooltiptext">Index: 150
 Patent: AU2013207564
 Status: Ceased
@@ -5490,7 +5494,7 @@ Anticipated Expiration Date: 2033-07-16</span>
     <li class="entry"> 
       <span class="marker misc"></span>
       <div>
-        <span class="tooltip">151: Patent Number: EP2848216 | Status: Not-in-force | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-30
+        <span class="tooltip">151: Patent Number: <a href="https://patents.google.com/patent/EP2848216/en" target="_blank" rel="noopener noreferrer">EP2848216</a> | Status: Not-in-force | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-30
           <span class="tooltiptext">Index: 151
 Patent: EP2848216
 Status: Not-in-force
@@ -5511,7 +5515,7 @@ Anticipated Expiration Date: 2033-07-30</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">152: Patent Number: JP6174930 | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-25
+        <span class="tooltip">152: Patent Number: <a href="https://patents.google.com/patent/JP6174930/en" target="_blank" rel="noopener noreferrer">JP6174930</a> | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-25
           <span class="tooltiptext">Index: 152
 Patent: JP6174930
 Status: Expired - Fee Related
@@ -5532,7 +5536,7 @@ Anticipated Expiration Date: 2033-07-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">153: Patent Number: US20160030771 | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2035-01-11
+        <span class="tooltip">153: Patent Number: <a href="https://patents.google.com/patent/US20160030771/en" target="_blank" rel="noopener noreferrer">US20160030771</a> | Status: Active | Title: Endoscopic instrument | Adjusted Expiration Date: 2035-01-11
           <span class="tooltiptext">Index: 153
 Patent: US20160030771
 Status: Active
@@ -5566,7 +5570,7 @@ Adjusted Expiration Date: 2035-01-11</span>
     <li class="entry"> 
       <span class="marker expired"></span>
       <div>
-        <span class="tooltip">154: Patent Number: JP2014023932 | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-25
+        <span class="tooltip">154: Patent Number: <a href="https://patents.google.com/patent/JP2014023932/en" target="_blank" rel="noopener noreferrer">JP2014023932</a> | Status: Expired - Fee Related | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-07-25
           <span class="tooltiptext">Index: 154
 Patent: JP2014023932
 Status: Expired - Fee Related
@@ -5587,7 +5591,7 @@ Anticipated Expiration Date: 2033-07-25</span>
     <li class="entry"> 
       <span class="marker active"></span>
       <div>
-        <span class="tooltip">155: Patent Number: US20230346410 | Status: Active | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-03-15
+        <span class="tooltip">155: Patent Number: <a href="https://patents.google.com/patent/US20230346410/en" target="_blank" rel="noopener noreferrer">US20230346410</a> | Status: Active | Title: Endoscopic instrument | Anticipated Expiration Date: 2033-03-15
           <span class="tooltiptext">Index: 155
 Patent: US20230346410
 Status: Active
@@ -5621,5 +5625,15 @@ Anticipated Expiration Date: 2033-03-15</span>
       </div>
     </li>
   </ul>
+  <script>
+    document.getElementById("searchInput").addEventListener("input", function () {
+      const filter = this.value.toLowerCase();
+      const entries = document.querySelectorAll(".entry");
+      entries.forEach(entry => {
+        const text = entry.textContent.toLowerCase();
+        entry.style.display = text.includes(filter) ? "flex" : "none";
+      });
+    });
+  </script>
 </body>
 </html>
