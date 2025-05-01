@@ -21,7 +21,7 @@ def classify_status(raw_status: str) -> str:
         return "expired"
     return "misc"
 
-# 3) Build HTML head and CSS (including search bar and tooltip styles)
+# 3) Build HTML head and CSS (including search bar and filter buttons)
 html_head = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,11 +36,24 @@ html_head = """<!DOCTYPE html>
       margin: 0 auto;
     }
     #searchInput {
-      margin: 20px 0;
+      margin: 20px 0 10px 0;
       padding: 8px;
       width: 100%;
       max-width: 400px;
       font-size: 1em;
+    }
+    #filterButtons button {
+      margin: 0 6px 10px 0;
+      padding: 6px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 4px;
+      background: #ecf0f1;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #filterButtons button:hover {
+      background: #bdc3c7;
     }
     .timeline {
       list-style: none;
@@ -80,9 +93,9 @@ html_head = """<!DOCTYPE html>
       padding: 8px;
       position: absolute;
       z-index: 1;
-      bottom: 100%; /* above the label */
+      bottom: 100%;
       left: 50%;
-      transform: translateX(-50%) translateY(-8px); /* center it horizontally, and nudge up */
+      transform: translateX(-50%) translateY(-8px);
       opacity: 0;
       transition: opacity 0.2s;
       white-space: pre-wrap;
@@ -111,6 +124,13 @@ html_head = """<!DOCTYPE html>
 <body>
   <h1>Patent Family Status Overview</h1>
   <input type="text" id="searchInput" placeholder="Search by Patent Number..." />
+  <div id="filterButtons">
+    <button onclick="filterStatus('all')">Show All</button>
+    <button onclick="filterStatus('active')">Show Active (Red)</button>
+    <button onclick="filterStatus('expired')">Show Expired (Green)</button>
+    <button onclick="filterStatus('not-found')">Show Not Found (Gray)</button>
+    <button onclick="filterStatus('misc')">Show Misc (Yellow)</button>
+  </div>
   <ul class="timeline">"""
 
 # 4) Generate each entry
@@ -167,7 +187,7 @@ for p in patents:
       </div>
     </li>""")
 
-# 5) Closing HTML and JS
+# 5) Closing HTML and JavaScript
 html_tail = """
   </ul>
   <script>
@@ -179,11 +199,24 @@ html_tail = """
         entry.style.display = text.includes(filter) ? "flex" : "none";
       });
     });
+
+    function filterStatus(status) {
+      const entries = document.querySelectorAll(".entry");
+      entries.forEach(entry => {
+        const marker = entry.querySelector(".marker");
+        const cls = marker.classList[1]; // "active", "expired", etc.
+        if (status === "all") {
+          entry.style.display = "flex";
+        } else {
+          entry.style.display = cls === status ? "flex" : "none";
+        }
+      });
+    }
   </script>
 </body>
 </html>"""
 
-# 6) Write output
+# 6) Write the output HTML file
 with open(OUTPUT_HTML, 'w', encoding='utf-8') as out:
     out.write(html_head)
     out.write("\n".join(html_body))
