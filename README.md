@@ -10,7 +10,7 @@ If you wish to get the latest available information on all of the patents that a
 
 If you wish to also get the newest patents created by Medtronic, you will need to update the **patent_family_set.json** file with the patent families of all included patents. One of the limitations of this repository currently is that it relies on having an API key for "The Lens" in order to retrieve full extended patent families. If you do not have this API key, unfortunately new patents will have to be manually added to the patent_family_set.json file. If you do have an API key, refer to the later section on how to do this.
 
-
+We recommend checking out the European Patent Office's API service as a free alternative to The Lens.
 
 
 ### Use Instructions
@@ -92,5 +92,3 @@ python patent_retrieval_Lens.py
 python patent_family_retrieval_Lens.py
 ```
 After this completes, you can then follow the steps of "**Updating pre-existing patents**" to update the html file with the new patent data.
-
-We recommend checking out the European Patent Office's API service as a free alternative to The Lens.
