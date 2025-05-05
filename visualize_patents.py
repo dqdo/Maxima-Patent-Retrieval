@@ -6,11 +6,11 @@ JSON_PATH = "patent_status_data/patent_family_set_status.json"
 # Output HTML file
 OUTPUT_HTML = "patents.html"
 
-# 1) Load your patent data
+# Load patent data
 with open(JSON_PATH, encoding="utf-8") as f:
     patents = json.load(f)
 
-# 2) Map raw status to CSS class
+# Map raw status to CSS class
 def classify_status(raw_status: str) -> str:
     s = raw_status.lower()
     if "not found" in s:
@@ -21,7 +21,7 @@ def classify_status(raw_status: str) -> str:
         return "expired"
     return "misc"
 
-# 3) Build HTML head and CSS (including search bar and filter buttons)
+# Building HTML head and CSS (including search bar and filter buttons)
 html_head = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,7 +133,7 @@ html_head = """<!DOCTYPE html>
   </div>
   <ul class="timeline">"""
 
-# 4) Generate each entry
+# Generate each entry
 html_body = []
 for p in patents:
     idx = p.get("index", "?")
@@ -187,7 +187,7 @@ for p in patents:
       </div>
     </li>""")
 
-# 5) Closing HTML and JavaScript
+# Closing HTML and JavaScript
 html_tail = """
   </ul>
   <script>
@@ -216,7 +216,7 @@ html_tail = """
 </body>
 </html>"""
 
-# 6) Write the output HTML file
+# Write the output HTML file
 with open(OUTPUT_HTML, 'w', encoding='utf-8') as out:
     out.write(html_head)
     out.write("\n".join(html_body))

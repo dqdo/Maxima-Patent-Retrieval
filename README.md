@@ -61,7 +61,7 @@ pip install [package]
 ```
 
 ### Running the program
-##### Updating pre existing patents
+##### Updating pre-existing patents
 If you wish to get the latest available information on all of the patents that already exist in the repository, run the **google_scraper.py** file and then the **visualize_patents.py** file.
 
 This can be done by activating your virtual environment and running 
@@ -73,16 +73,24 @@ Then, once the script has completed,
 python .\visualize_patents.py
 ```
 
-##### Getting new patents
+##### Getting new patent families
 As mentioned previously, if there is no API access for The Lens, the patent_family_set.json must be updated manually by checking The Lens (or other database including extended patent families) and adding any new patents to the list.
 
-If there is API access, there are two steps for updating the patent families:
+If there is API access, there are four steps for updating the patent families:
 1. Create a file within the repository named ".env", and add the following text to the file:
 ```
 API_KEY=[insert API key here]
 ```
-2. Run the **patent_family_retrieval_Lens.py** script
+2. List patents that need to be retrieved in **input.txt**
+
+3. Run the **patent_retrieval_Lens.py** script (Note: Be sure to clear previous data of patent data responses, including patent families, if updating the patent families)
+```
+python patent_retrieval_Lens.py
+```
+4. Run the **patent_family_retrieval_Lens.py** script
 ```
 python patent_family_retrieval_Lens.py
 ```
-After this completes, you can then follow the steps of "**Updating pre existing patents**" to update the html file with the new patent data.
+After this completes, you can then follow the steps of "**Updating pre-existing patents**" to update the html file with the new patent data.
+
+We recommend checking out the European Patent Office's API service as a free alternative to The Lens.
