@@ -12,7 +12,6 @@ If you wish to also get the newest patents created by Medtronic, you will need t
 
 We recommend checking out the European Patent Office's API service as a free alternative to The Lens.
 
-
 ### Use Instructions
 
 #### Installations Required 
