@@ -47,9 +47,9 @@ def process_patent_list(input_file, output_directory):
         save_patent_json_response(patent, output_directory)
 
 
-# Specify your paths
+# Specifying paths
 input_file = "input.txt"
 output_directory = "data_Lens"
 
-# Run the script
+# Running script
 process_patent_list(input_file, output_directory)

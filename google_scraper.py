@@ -8,14 +8,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Detect default browser
+
+# Detect the default web browser on the system
 def get_default_browser():
     system_platform = platform.system().lower()
 
     try:
         if system_platform == 'windows':
+            # Read default browser from Windows registry
             result = subprocess.run(
-                ['reg', 'query', 'HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\Shell\\Associations\\URLAssociations\\http\\UserChoice'],
+                ['reg', 'query',
+                 'HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\Shell\\Associations\\URLAssociations\\http\\UserChoice'],
                 capture_output=True, text=True, check=True
             )
             if 'chrome' in result.stdout.lower():
@@ -26,12 +29,15 @@ def get_default_browser():
                 return 'edge'
 
         elif system_platform == 'darwin':
+            # Check if Safari is available on macOS
             result = subprocess.run(['open', '-Ra', 'Safari'], capture_output=True)
             if result.returncode == 0:
                 return 'safari'
 
         elif system_platform == 'linux':
-            result = subprocess.run(['xdg-settings', 'get', 'default-web-browser'], capture_output=True, text=True, check=True)
+            # Get default browser on Linux
+            result = subprocess.run(['xdg-settings', 'get', 'default-web-browser'], capture_output=True, text=True,
+                                    check=True)
             browser = result.stdout.strip().lower()
             if 'chrome' in browser:
                 return 'chrome'
@@ -44,7 +50,8 @@ def get_default_browser():
 
     return None
 
-# Create driver
+
+# Create a headless Selenium WebDriver for the given browser
 def create_webdriver(browser):
     if browser == 'chrome':
         options = webdriver.ChromeOptions()
@@ -70,12 +77,15 @@ def create_webdriver(browser):
     else:
         raise ValueError("Unsupported browser type")
 
-# Extract patent info
+
+# Get detailed information about a patent from Google Patents
 def get_patent_details(index, patent_num, driver, related_patents=None):
     print(f"[{index}] Patent: {patent_num}")
+    # Link for Google Patents
     url = f'https://patents.google.com/patent/{patent_num}/en'
     driver.get(url)
 
+    # Wait until the events section is loaded
     try:
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'event')]"))
@@ -83,14 +93,15 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
     except Exception:
         print("Warning: Could not verify event section loaded.")
 
+    # Extract a single text element
     def extract(xpath, label):
         try:
             el = driver.find_element(By.XPATH, xpath)
             return el.text.strip()
         except Exception:
             return f"{label} not found"
-        
-    # extracts claims from given xpath and label
+
+    # Extract multiple claim texts
     def extract_claims(xpath, label):
         try:
             els = driver.find_elements(By.XPATH, xpath)
@@ -101,6 +112,7 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
         except Exception:
             return f"{label} not found"
 
+    # Return all extracted data as a dictionary, extracting with Xpaths
     return {
         "index": index,
         "patent_number": patent_num,
@@ -134,12 +146,13 @@ def get_patent_details(index, patent_num, driver, related_patents=None):
         )
     }
 
-# Directories
+
+# Setup output directories
 family_data_dir = 'patent_family_data'
 status_data_dir = 'patent_status_data'
 os.makedirs(status_data_dir, exist_ok=True)
 
-# Load patent family set
+# Load patent family data from JSON
 family_set_path = os.path.join(family_data_dir, 'patent_family_set.json')
 
 if not os.path.exists(family_set_path):
@@ -149,6 +162,7 @@ if not os.path.exists(family_set_path):
 with open(family_set_path, 'r', encoding='utf-8') as f:
     family_set = json.load(f)
 
+# Detect default browser and proceed
 default_browser = get_default_browser()
 
 if default_browser:
@@ -157,6 +171,7 @@ if default_browser:
 
     all_patent_data = []
 
+    # Process each patent in the family set
     for idx, (main_patent, related_patents) in enumerate(family_set.items()):
         try:
             data = get_patent_details(idx, main_patent, driver, related_patents)
@@ -164,7 +179,7 @@ if default_browser:
         except Exception as e:
             print(f"Error processing {main_patent}: {e}")
 
-    # Save all results into one file
+    # Save all results to JSON
     final_output_path = os.path.join(status_data_dir, 'patent_family_set_status.json')
     with open(final_output_path, 'w', encoding='utf-8') as f:
         json.dump(all_patent_data, f, indent=2, ensure_ascii=False)

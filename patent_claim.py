@@ -84,9 +84,3 @@ def load_json(file_name:str):
     with open(file_name) as f:
         data = json.load(f)
     return data
-
-# patent = "US8377085"
-# tree = get_patent_claims(patent)
-# for node in tree:
-#     print(node.print_tree())
-# print(tree)
